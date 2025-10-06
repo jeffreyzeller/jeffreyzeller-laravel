@@ -45,7 +45,7 @@
         </div>
     </nav>
 
-    <div class="w-full bg-[url(./assets/images/stage.jpg)] bg-fixed bg-bottom bg-cover transform-gpu h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory absolute top-[72] left-0">
+    <div class="w-full bg-[url({{ asset('/images/stage.jpg') }})] bg-fixed bg-bottom bg-cover transform-gpu h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory absolute top-[72] left-0">
 
         <!-- Section Main -->
         <section id="home" class="shrink-0 w-full h-[calc(100vh-72px)] text-center content-center snap-start ">
@@ -137,7 +137,7 @@
             <h2 class="text-4xl text-center text-neutral-200 font-bold py-5">Services</h2>
             <div class="grid lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3">
                 <div>
-                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url(./assets/images/web-development.png)] bg-center bg-contain rounded-t">
+                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('/images/web-development.png') }})] bg-center bg-contain rounded-t">
                         
                     </div>
                     <div class="bg-slate-700 text-white p-3 rounded-b">
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="mb-5">
-                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url(./assets/images/system-administration.png)] bg-center bg-contain rounded-t">
+                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('/images/system-administration.png') }})] bg-center bg-contain rounded-t">
                         
                     </div>
                     <div class="bg-slate-700 text-white p-3 rounded-b">
@@ -161,7 +161,7 @@
                     </div>
                 </div>
                 <div class="mb-5">
-                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url(./assets/images/technical-support.png)] bg-center bg-contain rounded-t">
+                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('/images/technical-support.png') }})] bg-center bg-contain rounded-t">
                         
                     </div>
                     <div class="bg-slate-700 text-white p-3 rounded-b">
@@ -183,7 +183,7 @@
         </section>
         
         <!-- Section Portfolio -->
-        <section class="w-full min-h-screen text-center content-center bg-blue-800/50 bg-[url(./assets/images/portfolio-bg.jpg)] bg-cover bg-center bg-fixed bg-blend-overlay snap-start">
+        <section class="w-full min-h-screen text-center content-center bg-blue-800/50 bg-[url({{ asset('/images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay snap-start">
             
             <h2 id="portfolio" class="text-4xl text-white font-bold leading-[5rem]">PORTFOLIO</h2>    
             <span class="md:hidden text-white">Scroll Right to view more.</span>            
@@ -192,7 +192,7 @@
                 
                 <div class="flex md:grid md:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
                     <div data-modal-target="malose-modal" data-modal-toggle="malose-modal" class="shrink-0 bg-blue-900 text-white grid w-full lg:w-auto snap-center my-3 duration-100 rounded-xl shadow hover:cursor-pointer hover:outline-blue-200 hover:outline-2 hover:outline-offset-4">
-                        <div class="w-full aspect-square bg-black bg-[url(./assets/images/portfolio/malose.png)] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
+                        <div class="w-full aspect-square bg-black bg-[url({{ asset('/images/portfolio/malose.png') }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
                             
                         </div>
                         <div class="p-5 font-bold rounded-b text-left">
@@ -224,53 +224,8 @@
 
         <!-- Section Contact -->
         <section id="contact" class="w-full h-screen bg-indigo-900/95 text-center content-center snap-start">
-            <h2 class="text-4xl font-bold">CONTACT</h2>
+            <h2 class="text-4xl text-white font-bold">CONTACT</h2>
             <div class="max-w-xl mx-auto">
-                <form id="contactForm">
-                <label>First Name</label>
-                <input name="firstName" required />
-
-                <label>Last Name</label>
-                <input name="lastName" required />
-
-                <label>Email</label>
-                <input name="email" type="email" required />
-
-                <label>Message</label>
-                <textarea name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-                <p id="formStatus"></p>
-                </form>
-
-                <script>
-                document.getElementById("contactForm").addEventListener("submit", async (e) => {
-                e.preventDefault();
-                const form = e.target;
-                const status = document.getElementById("formStatus");
-                status.textContent = "Sending...";
-
-                const payload = {
-                    firstName: form.firstName.value,
-                    lastName: form.lastName.value,
-                    email: form.email.value,
-                    message: form.message.value,
-                };
-
-                try {
-                    const res = await fetch("/api/form-submit", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(payload),
-                    });
-                    const data = await res.json();
-                    status.textContent = data.message;
-                } catch (err) {
-                    status.textContent = "Error sending message.";
-                    console.error(err);
-                }
-                });
-                </script>
             </div>
             
         </section>
