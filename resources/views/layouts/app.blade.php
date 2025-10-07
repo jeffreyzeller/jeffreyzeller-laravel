@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="">
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
     </head>
     <body>
         @include('layouts.nav')
-        <div class="w-full bg-[url({{ asset('images/stage.jpg') }})] bg-fixed bg-bottom bg-cover h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-proximity snap-mandatory fixed top-[72] left-0">
+        <div class="w-full bg-[url({{ asset('images/stage.jpg') }})] bg-fixed bg-bottom bg-cover h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory fixed top-[72] left-0">
         @yield('content')
         </div>
         @include('layouts.footer')
