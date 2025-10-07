@@ -1,15 +1,12 @@
 <?php
 
+use App\Http\Controllers\Home;
+use App\Models\Portfolio;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
-
-
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-
+Route::get('/', [Home::class, 'index'])->name('home');
 
 // Laravel Livewire & Flux Panel
 Route::view('dashboard', 'dashboard')

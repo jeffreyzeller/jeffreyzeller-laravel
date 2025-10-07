@@ -140,37 +140,25 @@
         
         <h2 id="portfolio" class="text-4xl text-white font-bold leading-[5rem]">PORTFOLIO</h2>    
         <span class="md:hidden text-white">Scroll Right to view more.</span>            
-
+        
         <div class="lg:max-w-5xl mx-5 sm:mx-auto">
             
             <div class="flex md:grid md:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
-                <div data-modal-target="malose-modal" data-modal-toggle="malose-modal" class="shrink-0 bg-blue-900 text-white grid w-full lg:w-auto snap-center my-3 duration-100 rounded-xl shadow hover:cursor-pointer hover:outline-blue-200 hover:outline-2 hover:outline-offset-4">
-                    <div class="w-full aspect-square bg-black bg-[url({{ asset('images/portfolio/malose.png') }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
+                @foreach($portfolio as $result)
+                <div data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}" class="shrink-0 bg-blue-900 text-white grid w-full lg:w-auto snap-center my-3 duration-100 rounded-xl shadow hover:cursor-pointer hover:outline-blue-200 hover:outline-2 hover:outline-offset-4">
+                    <div class="w-full aspect-square bg-black bg-[url({{ asset('storage/' . $result->image) }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
                         
                     </div>
                     <div class="p-5 font-bold rounded-b text-left">
-                        Malose<br />
-                        <span class="bg-blue-500 text-xs text-white px-2 py-1 rounded-full">TailWindCSS</span>
+                        {{ $result->title }}<br />
+                        
+                        @foreach($result->tags as $tag)
+                        <span class="bg-blue-500 text-xs text-white px-2 py-1 rounded-full">{{ $tag }}</span>
+                        @endforeach
                     </div>
                 </div>
-                <div class="shrink-0  grid w-full place-items-center snap-center my-3 duration-100 bg-neutral-200 shadow hover:cursor-pointer hover:shadow-neutral-500 hover:outline-blue-950 hover:outline-4 hover:outline-offset-4">
-                    <div class="w-full aspect-square bg-neutral-500">
-
-                    </div>
-                    <div class="py-5 font-bold">
-                        Packmule
-                    </div>
-                </div>
-                <div class="shrink-0  grid w-full place-items-center snap-center my-3 duration-100 bg-neutral-200 shadow hover:cursor-pointer hover:shadow-neutral-500 hover:outline-blue-950 hover:outline-4 hover:outline-offset-4">
-                    <div class="w-full aspect-square bg-neutral-500">
-
-                    </div>
-                    <div class="py-5 font-bold">
-                        Car Buyer
-                    </div>
-                </div>
+                @endforeach
                 
-
             </div>
         </div>
     </section>
@@ -182,32 +170,40 @@
         
     </section>
 </div>
-<!-- Malose Modal -->
-<div id="malose-modal" tabindex="-1" aria-hidden="true" class=" hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
+<!-- Portfolio Modal -->
+@foreach($portfolio as $result)
+<div id="portfolio-{{ $result->id }}" tabindex="-1" aria-hidden="true" class=" hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
     <div class="relative p-4 w-full max-w-4xl max-h-full">
         <!-- Modal content -->
         <div class="relative bg-blue-950 rounded-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
-            <!-- Modal header -->
-            <div class="flex items-center justify-between p-4 md:p-5 rounded-t dark:border-gray-600 border-slate-900">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                    www.malose.ca
-                </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="malose-modal">
-                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                </button>
-            </div>
             <!-- Modal body -->
-            <div class="p-4 md:p-5 space-y-4">
-                <img src="{{ asset('images/portfolio/malose.png') }}">
-            </div>
-            <!-- Modal footer -->
-            <div class="flex items-center p-4 md:p-5 rounded-b">
-                <span class="bg-blue-500 text-sm text-white px-3 pt-1 rounded-full">TailWindCSS</span>
+            <div class="md:p-5 flex text-white">
+                <div>
+                    <img src="{{ asset('storage/' . $result->image) }}">
+                </div>
+                <div class="p-5">
+                        <button type="button" class="absolute right-3 top-3 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="portfolio-{{ $result->id }}">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <h3 class="text-xl font-semibold text-white dark:text-white">{{ $result->title }}</h3>
+                    <span class="text-sm font-light">{{ $result->url }}</span><br />
+                    <div>
+                        {{ $result->description }}
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="font-bold rounded-b text-left absolute bottom-5">
+                        @foreach($result->tags as $tag)
+                        <span class="bg-blue-500 text-xs text-white px-2 py-1 rounded-full">{{ $tag }}</span>
+                        @endforeach
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+@endforeach
 @endsection
