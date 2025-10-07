@@ -4,10 +4,14 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
 
+
+Route::get('/', function () {
+    return view('homepage');
+})->name('homepage');
+
+
+// Laravel Livewire & Flux Panel
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
@@ -30,5 +34,6 @@ Route::middleware(['auth'])->group(function () {
         )
         ->name('two-factor.show');
 });
+// END OF LARAVEL LIVEWIRE & FLUX PANEL
 
 require __DIR__.'/auth.php';

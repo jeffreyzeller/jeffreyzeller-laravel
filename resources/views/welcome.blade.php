@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="bg-slate-900/98 border-gray-200 dark:bg-gray-900 absolute sticky top-0 z-45">
+    <nav class="bg-slate-900/98 border-gray-200 dark:bg-gray-900 sticky top-0 z-45">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://www.jeffreyzeller.com" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <!-- <img src="#" class="h-8" alt="Jeffrey Zeller Logo" /> -->
@@ -45,7 +45,7 @@
         </div>
     </nav>
 
-    <div class="w-full bg-[url({{ asset('/images/stage.jpg') }})] bg-fixed bg-bottom bg-cover transform-gpu h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory absolute top-[72] left-0">
+    <div class="w-full bg-[url({{ asset('images/stage.jpg') }})] bg-fixed bg-bottom bg-cover transform-gpu h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory absolute top-[72] left-0">
 
         <!-- Section Main -->
         <section id="home" class="shrink-0 w-full h-[calc(100vh-72px)] text-center content-center snap-start ">
@@ -137,7 +137,7 @@
             <h2 class="text-4xl text-center text-neutral-200 font-bold py-5">Services</h2>
             <div class="grid lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3">
                 <div>
-                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('/images/web-development.png') }})] bg-center bg-contain rounded-t">
+                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('images/web-development.png') }})] bg-center bg-contain rounded-t">
                         
                     </div>
                     <div class="bg-slate-700 text-white p-3 rounded-b">
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="mb-5">
-                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('/images/system-administration.png') }})] bg-center bg-contain rounded-t">
+                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('images/system-administration.png') }})] bg-center bg-contain rounded-t">
                         
                     </div>
                     <div class="bg-slate-700 text-white p-3 rounded-b">
@@ -161,7 +161,7 @@
                     </div>
                 </div>
                 <div class="mb-5">
-                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('/images/technical-support.png') }})] bg-center bg-contain rounded-t">
+                    <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('images/technical-support.png') }})] bg-center bg-contain rounded-t">
                         
                     </div>
                     <div class="bg-slate-700 text-white p-3 rounded-b">
@@ -183,7 +183,7 @@
         </section>
         
         <!-- Section Portfolio -->
-        <section class="w-full min-h-screen text-center content-center bg-blue-800/50 bg-[url({{ asset('/images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay snap-start">
+        <section class="w-full min-h-screen text-center content-center bg-blue-800/50 bg-[url({{ asset('images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay snap-start">
             
             <h2 id="portfolio" class="text-4xl text-white font-bold leading-[5rem]">PORTFOLIO</h2>    
             <span class="md:hidden text-white">Scroll Right to view more.</span>            
@@ -192,7 +192,7 @@
                 
                 <div class="flex md:grid md:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
                     <div data-modal-target="malose-modal" data-modal-toggle="malose-modal" class="shrink-0 bg-blue-900 text-white grid w-full lg:w-auto snap-center my-3 duration-100 rounded-xl shadow hover:cursor-pointer hover:outline-blue-200 hover:outline-2 hover:outline-offset-4">
-                        <div class="w-full aspect-square bg-black bg-[url({{ asset('/images/portfolio/malose.png') }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
+                        <div class="w-full aspect-square bg-black bg-[url({{ asset('images/portfolio/malose.png') }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
                             
                         </div>
                         <div class="p-5 font-bold rounded-b text-left">
@@ -237,7 +237,7 @@
     <div id="malose-modal" tabindex="-1" aria-hidden="true" class=" hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
         <div class="relative p-4 w-full max-w-4xl max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-blue-950 rounded-lg shadow-sm dark:bg-gray-700 shadow shadow-lg shadow-slate-950">
+            <div class="relative bg-blue-950 rounded-lg dark:bg-gray-700 shadow-lg shadow-slate-950">
                 <!-- Modal header -->
                 <div class="flex items-center justify-between p-4 md:p-5 rounded-t dark:border-gray-600 border-slate-900">
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
