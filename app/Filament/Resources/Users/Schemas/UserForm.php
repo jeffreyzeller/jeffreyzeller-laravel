@@ -26,7 +26,8 @@ class UserForm
                 ->preload(),
                 TextInput::make('password')
                     ->password()
-                    ->required(),
+                    ->required()
+                    ->visibleOn('create'),
                 Textarea::make('two_factor_secret')
                     ->columnSpanFull(),
                 Textarea::make('two_factor_recovery_codes')
