@@ -6,8 +6,8 @@
     <section id="home" class="shrink-0 w-full h-[calc(100vh-72px)] text-center content-center snap-start ">
         <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
             <main class="flex w-full flex-col max-w-4xl sm:flex-row rounded-lg">
-                <div class="text-center content-center text-[13px] leading-[20px] flex-1 sm:p-6 pb-12 p-5 lg:p-20">
-                    <h1 class="mb-1 font-bold xs:text-4xl sm:text-4xl md:text-5xl text-white text-left">
+                <div class="shrink text-center content-center text-[13px] leading-[20px] flex-1 sm:p-6 pb-12 p-5 lg:p-20">
+                    <h1 class="mb-1 font-bold text-3xl sm:text-4xl md:text-5xl text-white text-left">
                         Custom Built<br />
                         Administrative &amp Client Panels<br />
 
@@ -51,7 +51,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="h-50 mx-3 lg:w-2/5">
+                <div class="h-50 mx-3 grow max-w-100">
                     <div class="border border-white overflow-hidden w-full flex rounded outline outline-offset-1 outline-white">
                     <div class="bg-white rounded-l p-2 text-xs text-left border-l border-y border-gray-500">
 
