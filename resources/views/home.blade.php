@@ -225,10 +225,11 @@
                     </div>
                     
                     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-appointment" role="tabpanel" aria-labelledby="appointment-tab">
-                        <!-- Calendly inline widget begin -->
-                        <div class="calendly-inline-widget p-0" data-url="https://calendly.com/accounts-jeffreyzeller/30min" style="min-width:320px;height:700px;"></div>
-                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                        <!-- Calendly inline widget end -->
+                       <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Schedule time with me</a>
+                        <!-- Calendly link widget end -->
                     </div>
                 </div>
             </div>
