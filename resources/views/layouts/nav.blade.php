@@ -1,6 +1,6 @@
 <!-- Navigation -->
 <nav class="bg-slate-900/98 border-gray-200 dark:bg-gray-900 sticky top-0 z-45">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://www.jeffreyzeller.com" class="flex items-center space-x-3 rtl:space-x-reverse">
             <!-- <img src="#" class="h-8" alt="Jeffrey Zeller Logo" /> -->
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-mono text-white">jeffreyzeller.com</span>

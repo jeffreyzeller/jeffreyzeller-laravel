@@ -5,9 +5,9 @@
     <!-- Section Home -->
     <section id="home" class="shrink-0 w-full h-[calc(100vh-72px)] text-center content-center snap-start ">
         <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
-            <main class="flex w-full flex-col max-w-4xl lg:flex-row rounded-lg">
+            <main class="flex w-full flex-col max-w-4xl sm:flex-row rounded-lg">
                 <div class="text-center content-center text-[13px] leading-[20px] flex-1 sm:p-6 pb-12 p-5 lg:p-20">
-                    <h1 class="mb-1 font-bold xs:text-4xl text-5xl text-white text-left">
+                    <h1 class="mb-1 font-bold xs:text-4xl sm:text-4xl md:text-5xl text-white text-left">
                         Custom Built<br />
                         Administrative &amp Client Panels<br />
 
@@ -90,7 +90,7 @@
     <!-- Section Services -->
     <section id="services" class="w-full min-h-screen content-center bg-slate-900/90 p-5 snap-start ">
         <h2 class="text-4xl text-center text-neutral-200 font-bold py-5">Services</h2>
-        <div class="grid lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3">
+        <div class="grid sm:grid-cols-3 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3">
             <div>
                 <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('images/web-development.png') }})] bg-center bg-contain rounded-t">
                     
@@ -143,7 +143,7 @@
         
         <div class="lg:max-w-5xl mx-5 sm:mx-auto">
             
-            <div class="flex md:grid md:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
+            <div class="flex sm:grid sm:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
                 @foreach($portfolio as $result)
                 <div data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}" class="shrink-0 bg-blue-900 text-white grid w-full lg:w-auto snap-center my-3 duration-100 rounded-xl shadow hover:cursor-pointer hover:outline-blue-200 hover:outline-2 hover:outline-offset-4">
                     <div class="w-full aspect-square bg-black bg-[url({{ asset('storage/' . $result->image) }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
@@ -175,7 +175,7 @@
 <div id="portfolio-{{ $result->id }}" tabindex="-1" aria-hidden="true" class=" hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
     <div class="relative p-4 w-full max-w-4xl max-h-full">
         <!-- Modal content -->
-        <div class="relative bg-blue-950 rounded-t-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
+        <div class="relative bg-blue-950 rounded-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
             <!-- Modal body -->
             <div class="md:p-5 sm:flex text-white">
                 <div>
