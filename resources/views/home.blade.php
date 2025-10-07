@@ -209,9 +209,10 @@
                     @enderror
                 </div>
                 <button class="g-recaptcha bg-blue-700 text-white rounded-b-lg p-3 w-full" 
-                data-sitekey="reCAPTCHA_site_key" 
-                data-callback='onSubmit' 
-                data-action='submit' type="submit">Submit</button>
+                data-sitekey="{{ env('GOOGLE_CAPTCHA_SITE_KEY') }}" 
+                data-callback="onSubmit"
+                data-action="submit"
+                type="submit">Submit</button>
                 
             </form>
         </div>
