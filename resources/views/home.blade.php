@@ -3,7 +3,7 @@
 @section('content')
     
     <!-- Section Home -->
-    <section id="home" class="w-full text-center content-center bg-transparent/100 snap-start min-h-[calc(100vh-72px)]">
+    <section id="home" class="w-full text-center content-center bg-transparent/100 snap-start min-h-[calc(100vh)]">
         <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
             
             <main class="flex w-full flex-col max-w-5xl sm:flex-row rounded-lg">
@@ -87,7 +87,7 @@
     </section>
 
     <!-- Section Services -->
-    <section id="services" class="w-full text-center content-center bg-slate-900/90 snap-start min-h-[calc(100vh-72px)]">
+    <section id="services" class="w-full text-center content-center bg-slate-900/90 snap-start min-h-[calc(100vh)]">
         <h2 class="text-4xl text-center text-neutral-200 font-bold py-5 mt-5">Services</h2>
         <div class="grid sm:grid-cols-3 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3 p-5">
             <div>
@@ -135,7 +135,7 @@
     </section>
     
     <!-- Section Portfolio -->
-    <section id="portfolio" class="w-full text-center content-center bg-blue-800/50 snap-start min-h-[calc(100vh-72px)] bg-[url({{ asset('images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay ">
+    <section id="portfolio" class="w-full text-center content-center bg-blue-800/50 snap-start min-h-[calc(100vh)] bg-[url({{ asset('images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay ">
         
         <h2 id="portfolio" class="text-4xl text-white font-bold leading-[5rem]">PORTFOLIO</h2>    
         <span class="md:hidden text-white">Scroll Right to view more.</span>            
@@ -163,7 +163,7 @@
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="w-full text-center content-center bg-indigo-900/95 snap-start min-h-[calc(100vh-72px)]">
+    <section id="contact" class="w-full text-center content-center bg-indigo-900/95 snap-start min-h-[calc(100vh)]">
         <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
         <div class="max-w-lg mx-auto text-left">
             @if (session('status'))
