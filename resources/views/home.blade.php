@@ -67,14 +67,11 @@
                                 <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Clients</span><br />
                                 <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Settings</span><br />
                             </div>
-
-                            
                         </div>
-
                     </div>
                     <div class="bg-slate-500 w-full sm:w-100 rounded-r p-1 border-r border-y border-gray-500">
                         <h2 class="text-left text-white font-bold">Portfolio<div class="bg-white aspect-square rounded-full h-4 float-right text-xs text-black pl-[5px]">x</div></h2>
-                        <div class="bg-white w-full h-70 rounded text-left p-2 grid grid-cols-2 gap-2">
+                        <div class="bg-white w-full h-50 rounded text-left p-2 grid grid-cols-2 gap-2">
                             @foreach($portfolio as $result)
                             <div class=" bg-[url({{ asset('storage/' . $result->image) }})] bg-cover bg-center p-5 rounded-xs"></div>
                             @endforeach
