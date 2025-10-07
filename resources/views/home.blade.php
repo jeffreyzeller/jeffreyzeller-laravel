@@ -163,7 +163,7 @@
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="w-full text-center place-content-center bg-indigo-900/95 snap-start min-h-[calc(100vh)]">
+    <section id="contact" class="w-full text-center place-content-center bg-indigo-900/95 snap-start min-h-[calc(100vh-72px)]">
         <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
         <div class="max-w-lg mx-auto text-left">
             <div class="p-5 sm:p-0">
@@ -226,7 +226,7 @@
                     
                     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-appointment" role="tabpanel" aria-labelledby="appointment-tab">
                         <!-- Calendly inline widget begin -->
-                        <div class="calendly-inline-widget p-5" data-url="https://calendly.com/accounts-jeffreyzeller/30min" style="min-width:320px;height:700px;"></div>
+                        <div class="calendly-inline-widget p-0" data-url="https://calendly.com/accounts-jeffreyzeller/30min" style="min-width:320px;height:700px;"></div>
                         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                         <!-- Calendly inline widget end -->
                     </div>
