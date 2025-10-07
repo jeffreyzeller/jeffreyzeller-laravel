@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Contact;
 use App\Http\Controllers\Home;
 use App\Models\Portfolio;
 use Illuminate\Support\Facades\Route;
@@ -7,6 +8,8 @@ use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 Route::get('/', [Home::class, 'index'])->name('home');
+
+Route::post('/contact', [Contact::class, 'store'])->name('contact.submit');
 
 // Laravel Livewire & Flux Panel
 Route::view('dashboard', 'dashboard')

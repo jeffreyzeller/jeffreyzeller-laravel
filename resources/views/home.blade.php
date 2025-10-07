@@ -2,11 +2,12 @@
 
 @section('content')
 <div class="w-full bg-[url({{ asset('images/stage.jpg') }})] bg-fixed bg-bottom bg-cover transform-gpu h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory absolute top-[72] left-0">
+    
     <!-- Section Home -->
     <section id="home" class="shrink-0 w-full h-[calc(100vh-72px)] text-center content-center snap-start ">
         <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
-            <main class="flex w-full flex-col max-w-4xl sm:flex-row rounded-lg">
-                <div class="shrink text-center content-center text-[13px] leading-[20px] flex-1 sm:p-6 pb-12 p-5 lg:p-20">
+            <main class="flex w-full flex-col max-w-5xl sm:flex-row rounded-lg">
+                <div class="shrink text-center content-center text-[13px] leading-[20px] flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
                     <h1 class="mb-1 font-bold text-3xl sm:text-4xl md:text-5xl text-white text-left">
                         Custom Built<br />
                         Administrative &amp Client Panels<br />
@@ -55,9 +56,9 @@
                     <div class="border border-white overflow-hidden w-full flex rounded outline outline-offset-1 outline-white">
                     <div class="bg-white rounded-l p-2 text-xs text-left border-l border-y border-gray-500">
 
-                        <span class="inline-block text-sm font-bold">Acme Inc</span><br />
+                        <span class="inline-block text-sm font-bold">JeffreyZeller</span><br />
                         <div class="flex">
-                            <div class="">
+                            <div class="w-full">
                                 <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Dashboard</span><br />
                                 <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Blog</span><br />
                                 <span class="inline-block py-0 px-2 mb-1 bg-slate-400 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Portfolio</span><br />
@@ -70,12 +71,11 @@
 
                     </div>
                     <div class="bg-slate-500 w-full sm:w-100 rounded-r p-1 border-r border-y border-gray-500">
-                        <h2 class="text-left text-white font-bold">Blog<div class="bg-white aspect-square rounded-full h-4 float-right"></div></h2>
-                        <div class="bg-white w-full h-41 rounded text-left p-2 grid grid-cols-3 gap-2">
+                        <h2 class="text-left text-white font-bold">Portfolio<div class="bg-white aspect-square rounded-full h-4 float-right text-xs text-black pl-[5px]">x</div></h2>
+                        <div class="bg-white w-full h-70 rounded text-left p-2 grid grid-cols-2 gap-2">
                             @foreach($portfolio as $result)
                             <div class=" bg-[url({{ asset('storage/' . $result->image) }})] bg-cover bg-center p-5 rounded-xs"></div>
                             @endforeach
-                            <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
@@ -162,10 +162,34 @@
             </div>
         </div>
     </section>
+
     <!-- Section Contact -->
     <section id="contact" class="w-full h-screen bg-indigo-900/95 text-center content-center snap-start">
-        <h2 class="text-4xl text-white font-bold">CONTACT</h2>
-        <div class="max-w-xl mx-auto">
+        <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
+        <div class="max-w-lg mx-auto text-left">
+            <form action="{{ route('contact.submit') }}" method="POST">
+                @csrf
+                @method('POST')
+                <div>
+                    <input type="text" name="name" type="text" class="w-full rounded-t-lg mb-3 @error('name') is-invalid @enderror" placeholder="Name" class="">
+                    @error('name')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div>
+                    <input type="text" name="email" type="email" class="w-full mb-3 @error('email') is-invalid @enderror" placeholder="email@addr.ess">
+                    @error('email')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div>
+                    <textarea type="text" name="message" class="w-full @error('message') is-invalid @enderror" placeholder="Message" rows="5"></textarea>
+                    @error('message')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <button class="bg-blue-700 text-white rounded-b-lg p-3 w-full" type="submit">Submit</button>
+            </form>
         </div>
         
     </section>
