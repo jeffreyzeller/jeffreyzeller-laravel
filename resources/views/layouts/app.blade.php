@@ -14,7 +14,7 @@
     </head>
     <body>
         @include('layouts.nav')
-        <div class="w-full bg-[url({{ asset('images/stage.jpg') }})] bg-fixed bg-bottom bg-cover transform-gpu min-h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory fixed top-[72] left-0">
+        <div class="w-full bg-[url({{ asset('images/stage.jpg') }})] bg-fixed bg-bottom bg-cover transform-gpu h-[calc(100vh)] overflow-y-scroll snap-y snap-mandatory fixed top-[72] left-0">
         @yield('content')
         </div>
         @include('layouts.footer')
