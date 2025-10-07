@@ -11,6 +11,7 @@
             background: color-mix(in oklab, var(--color-gray-900) 20%, transparent);
         };
     </style>
+     <script src="https://www.google.com/recaptcha/api.js"></script>
     </head>
     <body>
         @include('layouts.nav')
@@ -21,5 +22,10 @@
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <div class="elfsight-app-708553fe-5e5d-4f26-92bd-4a1f5833ea13" data-elfsight-app-lazy></div>
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+         <script>
+        function onSubmit(token) {
+            document.getElementById("contact-form").submit();
+        }
+        </script>
     </body>
 </html>

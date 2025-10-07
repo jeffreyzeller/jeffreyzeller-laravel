@@ -6,8 +6,11 @@
     <!-- Section Home -->
     <section id="home" class="shrink-0 w-full h-[calc(100vh-72px)] text-center content-center snap-start ">
         <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
+            
             <main class="flex w-full flex-col max-w-5xl sm:flex-row rounded-lg">
+                
                 <div class="shrink text-center content-center text-[13px] leading-[20px] flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
+                    
                     <h1 class="mb-1 font-bold text-3xl sm:text-4xl md:text-5xl text-white text-left">
                         Custom Built<br />
                         Administrative &amp Client Panels<br />
@@ -167,7 +170,24 @@
     <section id="contact" class="w-full h-screen bg-indigo-900/95 text-center content-center snap-start">
         <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
         <div class="max-w-lg mx-auto text-left">
-            <form action="{{ route('contact.submit') }}" method="POST">
+            @if (session('status'))
+                <div id="alert-1" class="flex items-center p-4 mb-4 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+                    <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                    </svg>
+                    <span class="sr-only">Info</span>
+                    <div class="ms-3 text-sm font-medium">
+                        {{ session('status') }}
+                    </div>
+                        <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-1" aria-label="Close">
+                        <span class="sr-only">Close</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                    </button>
+                    </div>
+            @endif
+            <form id="contact-form" action="{{ route('contact.submit') }}" method="POST">
                 @csrf
                 @method('POST')
                 <div>
@@ -188,7 +208,11 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
-                <button class="bg-blue-700 text-white rounded-b-lg p-3 w-full" type="submit">Submit</button>
+                <button class="g-recaptcha bg-blue-700 text-white rounded-b-lg p-3 w-full" 
+                data-sitekey="reCAPTCHA_site_key" 
+                data-callback='onSubmit' 
+                data-action='submit' type="submit">Submit</button>
+                
             </form>
         </div>
         

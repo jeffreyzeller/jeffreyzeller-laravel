@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreContactRequest;
 use Illuminate\Http\Request;
 use App\Models\Contact as ContactModel;
 
@@ -26,19 +27,22 @@ class Contact extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreContactRequest $request)
     {
         //
-        $name = $request->input('name');
-        $email = $request->input('email');
-        $message = $request->input('message');
-
-        $contact = new ContactModel();
-        $contact->name = $name;
-        $contact->email = $email;
-        $contact->message = $message;
-        $contact->save();
-        return redirect()->route('home');
+        dd($request->all());
+        $validated = $request->validated();
+        if ($validated) {
+            $contact = new ContactModel();
+            $contact->name = $request->input('name');
+            $contact->email = $request->input('email');
+            $contact->message = $request->input('message');
+            $contact->save();
+            return redirect('/#contact')->with('status', 'Message sent, I will return contact you as soon as I am avilable.');
+        } else {
+            return redirect('/#contact')->with('status', 'Error sending message.');
+        }
+        
     }
 
     /**
