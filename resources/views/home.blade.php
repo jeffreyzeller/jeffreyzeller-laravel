@@ -79,7 +79,6 @@
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
-                            <div class="bg-slate-200 p-5 rounded-xs"></div>
                         </div>
                     </div>
                 </div>
