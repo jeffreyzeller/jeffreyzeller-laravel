@@ -40,10 +40,11 @@ class PortfolioForm
                     ->schema([
                         FileUpload::make('image')
                             ->required()
-                            ->maxSize(15000)
+                            ->maxSize(1500000)
                             ->disk('public')
                             ->visibility('public')
-                            ->directory('portfolio/images'),
+                            ->directory('portfolio/images')
+                            ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg']),
                         TagsInput::make('tags')
                             ->required()
                             ->columnSpanFull(),
