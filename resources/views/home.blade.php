@@ -163,7 +163,7 @@
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="w-full text-center content-center bg-indigo-900/95 snap-start min-h-[calc(100vh)]">
+    <section id="contact" class="w-full text-center place-content-center bg-indigo-900/95 snap-start min-h-[calc(100vh)]">
         <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
         <div class="max-w-lg mx-auto text-left">
             @if (session('status'))
