@@ -27,7 +27,7 @@ class ClientPanelProvider extends PanelProvider
             ->id('client')
             ->path('')
             ->domain('client.jeffreyzeller.com')
-            ->login(Login::class)
+            ->login()
             ->colors([
                 'primary' => Color::Amber,
             ])
