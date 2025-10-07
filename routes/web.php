@@ -7,8 +7,8 @@ use Livewire\Volt\Volt;
 
 
 Route::get('/', function () {
-    return view('homepage');
-})->name('homepage');
+    return view('home');
+})->name('home');
 
 
 // Laravel Livewire & Flux Panel
