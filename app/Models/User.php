@@ -60,4 +60,13 @@ class User extends Authenticatable
             ->map(fn ($word) => Str::substr($word, 0, 1))
             ->implode('');
     }
+
+    public function canAccessPanel(Panel $panel): bool
+    {
+        return match ($panel->getId()) {
+            'admin' => true, // allow admin panel access for now
+            'client' => true, // if you also have the client panel
+            default => false,
+        };
+    }
 }

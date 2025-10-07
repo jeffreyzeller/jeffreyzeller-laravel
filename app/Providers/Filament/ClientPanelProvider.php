@@ -53,7 +53,6 @@ class ClientPanelProvider extends PanelProvider
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
             ])
-            ->authGuard('web')
             ->authMiddleware([
                 Authenticate::class,
             ]);
