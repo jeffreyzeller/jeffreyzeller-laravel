@@ -91,7 +91,7 @@
 
     <!-- Section Services -->
     <section id="services" class="w-full text-center content-center bg-slate-900/90 snap-start min-h-[calc(100vh-72px)]">
-        <h2 class="text-4xl text-center text-neutral-200 font-bold py-5">Services</h2>
+        <h2 class="text-4xl text-center text-neutral-200 font-bold py-5 mt-5">Services</h2>
         <div class="grid sm:grid-cols-3 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3 p-5">
             <div>
                 <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('images/web-development.png') }})] bg-center bg-contain rounded-t">
