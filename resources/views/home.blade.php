@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="w-full bg-[url({{ asset('images/stage.jpg') }})] bg-fixed bg-bottom bg-cover transform-gpu h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory absolute top-[72] left-0">
     
     <!-- Section Home -->
     <section id="home" class="shrink-0 w-full h-[calc(100vh-72px)] text-center content-center snap-start ">
@@ -215,7 +214,6 @@
         </div>
         
     </section>
-</div>
 <!-- Portfolio Modal -->
 @foreach($portfolio as $result)
 <div id="portfolio-{{ $result->id }}" tabindex="-1" aria-hidden="true" class=" hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">

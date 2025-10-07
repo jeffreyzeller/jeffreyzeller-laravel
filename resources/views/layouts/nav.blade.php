@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="bg-slate-900/98 border-gray-200 dark:bg-gray-900 sticky top-0 z-45">
+<nav class="bg-slate-900/98 border-gray-200 dark:bg-gray-900 fixed w-full top-0 z-60">
     <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://www.jeffreyzeller.com" class="flex items-center space-x-3 rtl:space-x-reverse">
             <!-- <img src="#" class="h-8" alt="Jeffrey Zeller Logo" /> -->
@@ -29,3 +29,13 @@
         </div>
     </div>
 </nav>
+<div class="h-[72px] w-full"></div> <!-- Spacing For Navigation bar -->
+<script>
+document.querySelectorAll('#navbar-default a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('[data-collapse-toggle="navbar-default"]').setAttribute('aria-expanded', 'false');
+    // Optionally hide the menu panel
+    document.getElementById('navbar-default').classList.add('hidden');
+  });
+});
+</script>
