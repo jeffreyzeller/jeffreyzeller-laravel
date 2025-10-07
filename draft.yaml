@@ -1,0 +1,10 @@
+models:
+  Portfolio:
+    title: string
+    description: text
+    image: string
+    url: string
+    tags: json
+
+controllers:
+  # ...
