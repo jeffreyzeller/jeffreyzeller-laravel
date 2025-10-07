@@ -44,7 +44,7 @@ class PortfolioForm
                             ->disk('public')
                             ->visibility('public')
                             ->directory('portfolio/images')
-                            ->acceptedFileTypes(['image/png', 'image/jpeg'])
+                            ->acceptedFileTypes(['image/*'])
                             ->rules(['mimes:png,jpeg,jpg']),
                         TagsInput::make('tags')
                             ->required()
