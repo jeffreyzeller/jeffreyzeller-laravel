@@ -187,7 +187,7 @@
                     </button>
                     </div>
             @endif
-            <form id="contact-form" action="{{ route('contact.submit') }}" method="POST">
+            <form id="contact-form" class="p-5" action="{{ route('contact.submit') }}" method="POST">
                 @csrf
                 @method('POST')
                 <div>
