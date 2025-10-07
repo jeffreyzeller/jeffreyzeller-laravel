@@ -36,7 +36,6 @@
         </div>
     </div>
 </nav>
-<div class="h-[72px] w-full"></div> <!-- Spacing For Navigation bar -->
 <script>
 const toggleBtn = document.getElementById('nav-toggle');
 const menu = document.getElementById('navbar-default');
