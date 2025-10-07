@@ -3,7 +3,7 @@
 @section('content')
     
     <!-- Section Home -->
-    <section id="home" class="shrink-0 w-full h-[calc(100vh-72px)] text-center content-center snap-start ">
+    <section id="home" class="w-full text-center content-center bg-transparent/100 snap-start min-h-[calc(100vh-72px)]">
         <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
             
             <main class="flex w-full flex-col max-w-5xl sm:flex-row rounded-lg">
@@ -90,9 +90,9 @@
     </section>
 
     <!-- Section Services -->
-    <section id="services" class="w-full min-h-screen content-center bg-slate-900/90 p-5 snap-start ">
+    <section id="services" class="w-full text-center content-center bg-slate-900/90 snap-start min-h-[calc(100vh-72px)]">
         <h2 class="text-4xl text-center text-neutral-200 font-bold py-5">Services</h2>
-        <div class="grid sm:grid-cols-3 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3">
+        <div class="grid sm:grid-cols-3 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3 p-5">
             <div>
                 <div class="bg-neutral-200 aspect-square mx-auto bg-[url({{ asset('images/web-development.png') }})] bg-center bg-contain rounded-t">
                     
@@ -138,7 +138,7 @@
     </section>
     
     <!-- Section Portfolio -->
-    <section class="w-full min-h-screen text-center content-center bg-blue-800/50 bg-[url({{ asset('images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay snap-start">
+    <section id="portfolio" class="w-full text-center content-center bg-blue-800/50 snap-start min-h-[calc(100vh-72px)] bg-[url({{ asset('images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay ">
         
         <h2 id="portfolio" class="text-4xl text-white font-bold leading-[5rem]">PORTFOLIO</h2>    
         <span class="md:hidden text-white">Scroll Right to view more.</span>            
@@ -166,25 +166,25 @@
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="w-full h-screen bg-indigo-900/95 text-center content-center snap-start">
+    <section id="contact" class="w-full text-center content-center bg-indigo-900/95 snap-start min-h-[calc(100vh-72px)]">
         <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
         <div class="max-w-lg mx-auto text-left">
             @if (session('status'))
-                <div id="alert-1" class="flex items-center p-4 mb-4 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
-                    <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+            <div id="alert-1" class="flex items-center p-4 mb-4 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+                <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                </svg>
+                <span class="sr-only">Info</span>
+                <div class="ms-3 text-sm font-medium">
+                    {{ session('status') }}
+                </div>
+                    <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-1" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                     </svg>
-                    <span class="sr-only">Info</span>
-                    <div class="ms-3 text-sm font-medium">
-                        {{ session('status') }}
-                    </div>
-                        <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-1" aria-label="Close">
-                        <span class="sr-only">Close</span>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                    </button>
-                    </div>
+                </button>
+            </div>
             @endif
             <form id="contact-form" class="p-5" action="{{ route('contact.submit') }}" method="POST">
                 @csrf
@@ -214,40 +214,41 @@
         </div>
         
     </section>
-<!-- Portfolio Modal -->
-@foreach($portfolio as $result)
-<div id="portfolio-{{ $result->id }}" tabindex="-1" aria-hidden="true" class=" hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
-    <div class="relative p-4 w-full max-w-4xl max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-blue-950 rounded-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
-            <!-- Modal body -->
-            <div class="md:p-5 sm:flex text-white">
-                <div>
-                    <img class="w-full rounded-t-lg sm:rounded-lg" src="{{ asset('storage/' . $result->image) }}">
-                </div>
-                <div class="p-5">
-                    <button type="button" class="absolute right-3 top-3 text-gray-400 bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="portfolio-{{ $result->id }}">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                        <span class="sr-only">Close modal</span>
-                    </button>
-                    <h3 class="text-xl font-semibold text-white dark:text-white">{{ $result->title }}</h3>
-                    <span class="text-sm font-light">{{ $result->url }}</span><br />
-                    <div>
-                        {{ $result->description }}
-                    </div>
 
-                    <!-- Modal footer -->
-                    <div class="font-bold rounded-b text-left sm:absolute bottom-5">
-                        @foreach($result->tags as $tag)
-                        <span class="bg-blue-500 text-xs text-white px-2 py-1 rounded-full">{{ $tag }}</span>
-                        @endforeach
+    <!-- Portfolio Modal -->
+    @foreach($portfolio as $result)
+    <div id="portfolio-{{ $result->id }}" tabindex="-1" aria-hidden="true" class=" hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
+        <div class="relative p-4 w-full max-w-4xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-blue-950 rounded-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
+                <!-- Modal body -->
+                <div class="md:p-5 sm:flex text-white">
+                    <div>
+                        <img class="w-full rounded-t-lg sm:rounded-lg" src="{{ asset('storage/' . $result->image) }}">
+                    </div>
+                    <div class="p-5">
+                        <button type="button" class="absolute right-3 top-3 text-gray-400 bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="portfolio-{{ $result->id }}">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                        <h3 class="text-xl font-semibold text-white dark:text-white">{{ $result->title }}</h3>
+                        <span class="text-sm font-light">{{ $result->url }}</span><br />
+                        <div>
+                            {{ $result->description }}
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="font-bold rounded-b text-left sm:absolute bottom-5">
+                            @foreach($result->tags as $tag)
+                            <span class="bg-blue-500 text-xs text-white px-2 py-1 rounded-full">{{ $tag }}</span>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-@endforeach
+    @endforeach
 @endsection
