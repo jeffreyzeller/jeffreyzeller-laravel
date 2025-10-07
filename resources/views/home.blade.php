@@ -59,10 +59,9 @@
                         <div class="flex">
                             <div class="">
                                 <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Dashboard</span><br />
-                                <span class="inline-block py-0 px-2 mb-1 bg-slate-400 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Blog</span><br />
-                                <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Products</span><br />
-                                <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Orders</span><br />
-                                <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Customers</span><br />
+                                <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Blog</span><br />
+                                <span class="inline-block py-0 px-2 mb-1 bg-slate-400 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Portfolio</span><br />
+                                <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Clients</span><br />
                                 <span class="inline-block py-0 px-2 mb-1 bg-slate-200 hover:bg-slate-400 w-full cursor-pointer rounded-xs">Settings</span><br />
                             </div>
 
@@ -73,7 +72,9 @@
                     <div class="bg-slate-500 w-full sm:w-100 rounded-r p-1 border-r border-y border-gray-500">
                         <h2 class="text-left text-white font-bold">Blog<div class="bg-white aspect-square rounded-full h-4 float-right"></div></h2>
                         <div class="bg-white w-full h-41 rounded text-left p-2 grid grid-cols-3 gap-2">
-                            <div class="bg-slate-200 p-5 rounded-xs"></div>
+                            @foreach($portfolio as $result)
+                            <div class=" bg-[url({{ asset('storage/' . $result->image) }})] bg-cover bg-center p-5 rounded-xs"></div>
+                            @endforeach
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
