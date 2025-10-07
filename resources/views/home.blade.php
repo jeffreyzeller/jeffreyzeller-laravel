@@ -135,7 +135,7 @@
     </section>
     
     <!-- Section Portfolio -->
-    <section id="portfolio" class="w-full text-center content-center bg-blue-800/50 snap-start min-h-[calc(100vh-72px)] bg-[url({{ asset('images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay ">
+    <section id="portfolio" class="w-full text-center content-center bg-blue-800/50 snap-start min-h-[calc(100vh)] bg-[url({{ asset('images/portfolio-bg.jpg') }})] bg-cover bg-center bg-fixed bg-blend-overlay">
         
         <h2 id="portfolio" class="text-4xl text-white font-bold leading-[5rem]">PORTFOLIO</h2>    
         <span class="md:hidden text-white">Scroll Right to view more.</span>            
@@ -163,7 +163,7 @@
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="w-full text-center content-center bg-indigo-900/95 snap-start min-h-[calc(100vh-72px)]">
+    <section id="contact" class="w-full text-center content-center bg-indigo-900/95 snap-start min-h-[calc(100vh)]">
         <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
         <div class="max-w-lg mx-auto text-left">
             @if (session('status'))
