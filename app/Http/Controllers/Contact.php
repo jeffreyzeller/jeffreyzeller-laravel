@@ -30,7 +30,6 @@ class Contact extends Controller
     public function store(StoreContactRequest $request)
     {
         //
-        dd($request->all());
         $validated = $request->validated();
         if ($validated) {
             $contact = new ContactModel();

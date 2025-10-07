@@ -20,15 +20,5 @@
         @include('layouts.footer')
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <div class="elfsight-app-708553fe-5e5d-4f26-92bd-4a1f5833ea13" data-elfsight-app-lazy></div>
-
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le2I-ErAAAAAJrbsBaDyu0JUeOV8xYggjdu8HwL"></script>
-        <script>
-        function onClick(e) {
-            e.preventDefault();
-            grecaptcha.enterprise.ready(async () => {
-            const token = await grecaptcha.enterprise.execute('6Le2I-ErAAAAAJrbsBaDyu0JUeOV8xYggjdu8HwL', {action: 'LOGIN'});
-            });
-        }
-        </script>
     </body>
 </html>
