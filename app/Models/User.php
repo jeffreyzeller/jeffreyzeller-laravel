@@ -70,12 +70,10 @@ class User extends Authenticatable implements FilamentUser
             return str_ends_with($this->email, '@jeffreyzeller.com');
         }
 
-        // Only users with the "super_admin" role can access Filament's admin panel
-        if ($panel->getId() === 'admin') {
-            return $this->hasAnyRole(['super_admin', 'admin']);
-        }
-
-        // Allow access to any other panels (if you have multiple)
-        return true;
+        return match ($panel->getId()) {
+            'admin' => $this->hasAnyRole(['super_admin', 'admin']),
+            'client' => $this->hasRole('client'),
+            default => true,
+        };
     }
 }
