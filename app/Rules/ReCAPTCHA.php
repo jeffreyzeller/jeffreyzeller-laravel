@@ -14,10 +14,10 @@ class ReCAPTCHA implements ValidationRule
      */
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        $response = Http::get("https://www.google.com/recaptcha/api/siteverify", [
-            "secret" => env('GOOGLE_CAPTCHA_SECRET_KEY'),
-            "response" => $value
-        ])->json();
+        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => env('GOOGLE_CAPTCHA_SECRET_KEY'),
+            'response' => $request->input('g-recaptcha-response'),
+        ]);
         dd($response);
     }
 }
