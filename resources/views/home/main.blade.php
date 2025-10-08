@@ -1,6 +1,6 @@
-<section id="home" class="w-full text-center content-center bg-transparent/100 snap-start min-h-[calc(100vh-72px)]">
-    <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-500 lg:grow starting:opacity-0">
-        <main class="flex w-full flex-col max-w-5xl sm:flex-row md:p-5 sm:rounded-lg bg-blue-700 dark:bg-gray-800 lg:outline-7 outline-white shadow-gray-700 dark:shadow-gray-800 lg:shadow-xl">
+<section id="home" class="w-full text-center sm:content-center bg-transparent/100 snap-start min-h-[calc(100vh-72px)]">
+    <div class="sm:flex items-center justify-center w-full transition-opacity opacity-100 duration-500 lg:grow starting:opacity-0">
+        <main class="flex w-full flex-col max-w-5xl sm:flex-row md:p-5 sm:rounded-lg bg-blue-700 dark:bg-gray-800 lg:outline-7 lg:outline-white sm:shadow-gray-700 dark:shadow-gray-800 sm:shadow-xl">
             <div class="shrink text-center content-center flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
                 
                 <h1 class="mb-1 font-bold text-5xl sm:text-4xl md:text-5xl text-white dark:text-gray-100 text-left">
@@ -46,7 +46,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="h-50 mx-3 sm:mx-0 grow max-w-100">
+            <div class="mx-3 py-3 sm:py-0 sm:mx-0 grow max-w-100">
                 <div class="border border-white overflow-hidden w-full flex rounded outline outline-offset-1 outline-white">
                 <div class="bg-white rounded-l p-2 text-xs text-left border-l border-y border-gray-500">
 

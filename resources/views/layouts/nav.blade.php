@@ -36,7 +36,7 @@
         </div>
     </div>
 </nav>
-<div class="h-[72px]"></div>
+<div class="hidden sm:visible h-[72px]"></div>
 <script>
 const toggleBtn = document.getElementById('nav-toggle');
 const menu = document.getElementById('navbar-default');
