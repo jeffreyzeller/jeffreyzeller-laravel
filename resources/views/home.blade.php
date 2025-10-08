@@ -14,7 +14,5 @@
     <!-- Section Contact -->
     @include('home.contact')
 
-    <!-- Portfolio Modals -->
-    @include('home.portfolio-modal')
 
 @endsection

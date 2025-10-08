@@ -21,5 +21,8 @@
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <!-- <div class="elfsight-app-708553fe-5e5d-4f26-92bd-4a1f5833ea13" data-elfsight-app-lazy></div> -->
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+        <!-- Portfolio Modals -->
+        @include('home.portfolio-modal')
     </body>
 </html>

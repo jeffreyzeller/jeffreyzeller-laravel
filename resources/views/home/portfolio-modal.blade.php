@@ -1,6 +1,6 @@
 <!-- Portfolio Modal -->
     @foreach($portfolio as $result)
-    <div id="portfolio-{{ $result->id }}" tabindex="-1" aria-hidden="true" class=" hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
+    <div id="portfolio-{{ $result->id }}" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-75 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
         <div class="relative p-4 w-full max-w-4xl max-h-full">
             <!-- Modal content -->
             <div class="relative bg-blue-950 rounded-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
