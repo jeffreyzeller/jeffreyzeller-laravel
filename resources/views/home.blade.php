@@ -20,5 +20,6 @@
     <div class="snap-start bg-white/75 text-slate-900 dark:bg-slate-950/80 dark:text-white  bg-[url({{ asset('images/bg-wave-trans.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark-trans.svg') }})] bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[100px]">
     </div>-->
 
-
+    <!-- Portfolio Modals -->
+    @include('home.portfolio-modal')
 @endsection

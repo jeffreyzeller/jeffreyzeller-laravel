@@ -3,9 +3,9 @@
     <div id="portfolio-{{ $result->id }}" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-75 justify-center items-center max-w-full md:inset-0 h-[calc(100%)] bg-black/75">
         <div class="relative p-4 w-full max-w-4xl max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-blue-950 rounded-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
+            <div class="relative bg-gray-200 rounded-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
                 <!-- Modal body -->
-                <div class="md:p-5 sm:flex text-white">
+                <div class="md:p-5 sm:flex text-gray-900 dark:text-white">
                     <div>
                         <img class="w-full rounded-t-lg sm:rounded-lg" src="{{ asset('storage/' . $result->image) }}">
                     </div>
@@ -16,7 +16,7 @@
                             </svg>
                             <span class="sr-only">Close modal</span>
                         </button>
-                        <h3 class="text-xl font-semibold text-white dark:text-white">{{ $result->title }}</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $result->title }}</h3>
                         <span class="text-sm font-light">{{ $result->url }}</span><br />
                         <div>
                             {{ $result->description }}

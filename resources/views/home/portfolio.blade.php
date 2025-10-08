@@ -6,7 +6,7 @@
         <div class="flex sm:grid sm:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
             
             @foreach($portfolio as $result)
-            <div data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}" class="shrink-0 bg-slate-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 grid w-full lg:w-auto snap-center my-3 duration-100 rounded-xl shadow hover:cursor-pointer hover:outline-blue-200 hover:outline-2 hover:outline-offset-4">
+            <div class="shrink-0 bg-slate-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 grid w-full lg:w-auto snap-center my-3 duration-100 rounded-xl shadow hover:cursor-pointer hover:outline-blue-200 hover:outline-2 hover:outline-offset-4">
                 <div class="w-full aspect-16/12 bg-black bg-[url({{ asset('storage/' . $result->image) }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
                     
                 </div>
@@ -18,7 +18,7 @@
                     @endforeach
                 </div>
                 <div class="px-5 pb-5 font-bold rounded-b text-left">
-                    <a href="" 
+                    <a  data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}" 
                     class="block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-lg transition">
                         <x-heroicon-s-viewfinder-circle class=" inline w-4 mr-1" /> View Project Outline
                     </a>
