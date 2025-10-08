@@ -28,6 +28,7 @@
                     </a>
                 </div>
             </div>
+            <br class="sm-hidden" />
             @endforeach
             
         </div>
