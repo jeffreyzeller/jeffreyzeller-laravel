@@ -16,7 +16,7 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div class="absolute bottom-0 p-6">
-                    <h3 class="text-xl font-semibold text-white">Fleet Management Dashboard</h3>
+                    <h3 class="text-xl font-semibold text-white">{{ $result->title }}</h3>
                     
                     <p class="text-slate-300 text-sm mt-1">
                         @foreach($result->tags as $tag)
