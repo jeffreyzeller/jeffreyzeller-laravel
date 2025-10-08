@@ -20,7 +20,7 @@
                 <div class="px-5 pb-5 font-bold rounded-b text-left">
                     <a  data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}" 
                     class="block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-lg transition">
-                        <x-heroicon-s-viewfinder-circle class=" inline w-4 mr-1" /> View Project Outline
+                        <x-heroicon-s-viewfinder-circle class=" inline w-4 mr-1" /> View Case Study
                     </a>
                 </div>
             </div>
