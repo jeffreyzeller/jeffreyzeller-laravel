@@ -46,7 +46,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="mx-3 py-3 sm:py-0 sm:mx-0 grow max-w-100">
+            <div class="order-first sm:order-last mx-3 py-3 sm:py-0 sm:mx-0 grow max-w-100">
                 <div class="border border-white overflow-hidden w-full flex rounded outline outline-offset-1 outline-white">
                 <div class="bg-white rounded-l p-2 text-xs text-left border-l border-y border-gray-500">
 
