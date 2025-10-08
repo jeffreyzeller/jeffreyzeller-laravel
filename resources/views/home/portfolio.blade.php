@@ -7,7 +7,7 @@
             
             @foreach($portfolio as $result)
 
-            <div class="group relative bg-white dark:bg-blue-900 rounded-2xl overflow-hidden 
+            <div class="relative bg-white dark:bg-blue-900 rounded-2xl overflow-hidden 
                 border border-slate-200 dark:border-blue-800 h-100
                 hover:outline-blue-200 hover:outline-2 hover:outline-offset-4
                 shadow-md hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-1">
