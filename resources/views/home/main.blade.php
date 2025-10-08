@@ -8,7 +8,7 @@
                 </h1>
                 <p class="mb-2 text-gray-100 dark:text-gray-300 font-semibold text-justify text-base font-mono">Your business isn’t cookie-cutter — your software shouldn’t be either. I design web applications built around your workflows, giving you the exact tools your team and clients need to get things done.</p>
                 
-                <a href="#contact" target="_self" class="w-full lg:w-200 inline-block dark:bg-blue-700 dark:border-slate-500 dark:text-[#1C1C1A] dark:hover:bg-blue-600 dark:hover:border-white px-5 py-3 shadow border-black bg-orange-500 text-white font-bold rounded
+                <a href="#contact" target="_self" class="w-full lg:w-200 inline-block dark:bg-blue-700 dark:border-slate-500 dark:text-[#1C1C1A]  dark:hover:border-white px-5 py-3 shadow border-black bg-orange-500 text-white font-bold rounded
                 transition delay-150 duration-300 ease-in-out hover:scale-105">
                     Let's Build Yours
                 </a>
