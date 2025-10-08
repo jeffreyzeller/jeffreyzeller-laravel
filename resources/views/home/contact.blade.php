@@ -1,19 +1,20 @@
 <section id="contact" class="w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[590px] pt-20">
     
-    <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
+    <h2 class="px-5 text-4xl text-white font-bold mb-5">Got and Idea? <br class="sm:hidden" />Lets Talk</h2>
+    <p class="px-5 text-lg text-white dark:text-gray-100">Share your idea below or book a time to chat. I'll help you turn it into a web app that works for <i>you</i>.
     
     <div class="max-w-lg mx-auto text-left">
         <div class="p-5">
             <div class="mb-4 border-b-1 border-blue-500 dark:border-gray-700">
                 <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-blue-600 dark:text-white bg-white dark:bg-gray-700 hover:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500" data-tabs-inactive-classes="dark:border-transparent text-white hover:text-gray-300 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
                     <li class="me-2" role="presentation">
-                        <button class="inline-block p-4 border-b-5 rounded-t-lg" id="message-styled-tab" data-tabs-target="#styled-message" type="button" role="tab" aria-controls="message" aria-selected="false">
-                            <x-heroicon-o-envelope class=" inline w-6 h-6 mr-1" /> Message Me
+                        <button class="inline-block p-4 border-b-5 rounded-t-lg text-sm" id="message-styled-tab" data-tabs-target="#styled-message" type="button" role="tab" aria-controls="message" aria-selected="false">
+                            <x-heroicon-o-envelope class=" inline w-4 mr-1" />Send me your idea
                         </button>
                     </li>
                     <li class="me-2" role="presentation">
-                        <button class="inline-block p-4 border-b-5 rounded-t-lg" id="appointment-styled-tab" data-tabs-target="#styled-appointment" type="button" role="tab" aria-controls="appointment" aria-selected="false">
-                           <x-heroicon-o-calendar-days class=" inline w-6 h-6 mr-1" /> Book Appointment
+                        <button class="inline-block p-4 border-b-5 rounded-t-lg text-sm" id="appointment-styled-tab" data-tabs-target="#styled-appointment" type="button" role="tab" aria-controls="appointment" aria-selected="false">
+                           <x-heroicon-o-calendar-days class=" inline w-4 mr-1" />Schedule a call
                         </button>
                     </li>
                 </ul>
@@ -61,9 +62,10 @@
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
-                        <button class="bg-orange-500 dark:bg-orange-600 text-white text-xl font-bold rounded-b-lg p-3 w-full" type="submit">
-                            Send Message
+                        <button class="bg-orange-500 dark:bg-orange-600 text-white text-xl font-bold rounded-b-lg p-3 w-full mb-3" type="submit">
+                            Send Your Idea
                         </button>
+                        <p class="text-gray-300 text-center">I typically respond in within 24 hours.</p>
                     </form>
                 </div>
                 
@@ -74,11 +76,15 @@
                         <!-- Calendly link widget begin -->
                         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                        <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-b-lg p-3 w-full" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Check My Availability</a>
+                        <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-b-lg p-3 mb-3 w-full" 
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Check My Availability</a>
                         <!-- Calendly link widget end -->
 
+                        <p class="text-gray-300 text-center">Completely obligation-free</p>
                 </div>
             </div>
+            
+            <p class="text-gray-300 text-center">Your idea is safe -- all communication is secure.</p>
         </div>
     </div>
     
