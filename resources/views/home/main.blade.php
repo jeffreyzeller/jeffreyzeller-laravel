@@ -32,9 +32,9 @@
                     <div class="bg-blue-600 dark:bg-gray-700 w-full sm:w-100 rounded-r p-1 border-r border-y border-gray-500">
                         <h2 class="text-left text-white font-bold">Portfolio<div class="bg-red-100 aspect-square rounded-full h-4 float-right text-xs text-gray-400 pl-[5px]"></div><div class="bg-gray-100 aspect-square rounded-full h-4 float-right text-xs text-gray-400 pl-[5px] mr-1"></div></h2>
                         <div class="bg-white w-full h-75 lg:h-40 rounded text-left p-2 grid grid-cols-2 gap-2">
-                            @foreach($portfolio as $result)
-                            <div class=" bg-[url({{ asset('storage/' . $result->image) }})] bg-cover bg-center p-5 rounded-xs"></div>
-                            @endforeach
+                            
+                            <div class="bg-slate-200 p-5 rounded-xs"></div>
+                            <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                         </div>
