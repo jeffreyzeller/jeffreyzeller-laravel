@@ -40,7 +40,7 @@
                 <ul class="sm:flex gap-3">
                     <li>
                         <a href="#contact" target="_self" class="w-full inline-block dark:bg-blue-700 dark:border-slate-500 dark:text-[#1C1C1A] dark:hover:bg-blue-600 dark:hover:border-white hover:bg-black hover:border-black px-5 py-3 shadow border-black bg-orange-500 text-white font-bold rounded">
-                            Book a Meeting
+                            Contact Me
                         </a>
                     </li>
                 </ul>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="bg-blue-600 dark:bg-gray-700 w-full sm:w-100 rounded-r p-1 border-r border-y border-gray-500">
-                    <h2 class="text-left text-white font-bold">Portfolio<div class="bg-white aspect-square rounded-full h-4 float-right text-xs text-black pl-[5px]">x</div></h2>
+                    <h2 class="text-left text-white font-bold">Portfolio<div class="bg-red-100 aspect-square rounded-full h-4 float-right text-xs text-gray-400 pl-[5px]"></div><div class="bg-gray-100 aspect-square rounded-full h-4 float-right text-xs text-gray-400 pl-[5px] mr-1"></div></h2>
                     <div class="bg-white w-full h-50 rounded text-left p-2 grid grid-cols-2 gap-2">
                         @foreach($portfolio as $result)
                         <div class=" bg-[url({{ asset('storage/' . $result->image) }})] bg-cover bg-center p-5 rounded-xs"></div>
