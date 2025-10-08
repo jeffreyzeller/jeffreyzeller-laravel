@@ -1,4 +1,4 @@
-<section id="home" class="relative snap-start bg-white/93 text-slate-900 dark:bg-slate-900 dark:text-white overflow-hidden transition-colors duration-300">
+<section id="home" class="relative snap-start bg-blue-200/95 text-slate-900 dark:bg-slate-900 dark:text-white overflow-hidden transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
         
             <!-- Text -->
@@ -18,7 +18,7 @@
                         Book a Free Consultation
                     </a>
                     <a href="#portfolio" 
-                    class="px-6 py-3 border border-slate-300 hover:border-blue-400 text-slate-700 hover:text-blue-600 dark:border-slate-600 dark:text-slate-300 dark:hover:text-blue-300 rounded-xl transition">
+                    class="px-6 py-3 border border-slate-50 hover:border-blue-400 text-slate-700 hover:text-blue-600 dark:border-slate-600 dark:text-slate-300 dark:hover:text-blue-300 rounded-xl transition">
                         View My Work
                     </a>
                 </div>

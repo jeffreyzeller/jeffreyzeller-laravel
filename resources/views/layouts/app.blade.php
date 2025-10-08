@@ -24,9 +24,12 @@
     </style>
     </head>
     <body class=" bg-blue-50 dark:bg-gray-700 bg-[url('{{ asset('images/body-bg.jpg') }}')] bg-fixed bg-cover bg-center bg-no-repeat bg-blend-multiply">
-        @include('layouts.nav')
+        
         @yield('content')
 
+        <!-- Section Contact -->
+        @include('home.contact')
+        
         @include('layouts.footer')
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <!-- <div class="elfsight-app-708553fe-5e5d-4f26-92bd-4a1f5833ea13" data-elfsight-app-lazy></div> -->

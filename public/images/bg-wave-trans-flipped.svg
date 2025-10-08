@@ -5,7 +5,7 @@
    width="960"
    height="540"
    version="1.1"
-   sodipodi:docname="bg-wave-dark-trans-flipped.svg"
+   sodipodi:docname="bg-wave-trans-flipped.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,7 +25,7 @@
      showgrid="false"
      inkscape:zoom="2.4449016"
      inkscape:cx="182.42043"
-     inkscape:cy="84.052463"
+     inkscape:cy="84.461477"
      inkscape:window-width="1862"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -33,7 +33,7 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="visual" />
   <path
-     d="m 960,22.77137 -53.3,13 c -53.4,13 -160,39 -266.7,35.2 -106.7,-3.9 -213.3,-37.5 -320,-52.9 -106.7,-15.3 -213.3,-12.3 -266.7,-10.8 l -53.3,1.5 v -176.99999 h 53.3 c 53.4,0 160,0 266.7,0 106.7,0 213.3,0 320,0 106.7,0 213.3,0 266.7,0 H 960 Z"
+     d="m 960,62.77137 -53.3,13 c -53.4,13 -160,39 -266.7,35.2 -106.7,-3.9 -213.3,-37.5 -320,-52.9 -106.7,-15.3 -213.3,-12.3 -266.7,-10.8 l -53.3,1.5 v -176.99999 h 53.3 c 53.4,0 160,0 266.7,0 106.7,0 213.3,0 320,0 106.7,0 213.3,0 266.7,0 H 960 Z"
      fill="#1e2939"
      stroke-linecap="round"
      stroke-linejoin="miter"

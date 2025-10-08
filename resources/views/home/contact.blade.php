@@ -56,7 +56,7 @@
                             @enderror
                         </div>
                         <div>
-                            <textarea type="text" name="message" class="w-full @error('message') is-invalid @enderror" placeholder="Message" rows="5"></textarea>
+                            <textarea type="text" name="message" class="w-full mb-2 @error('message') is-invalid @enderror" placeholder="Message" rows="5"></textarea>
                             @error('message')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror

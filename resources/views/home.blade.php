@@ -4,7 +4,8 @@
     
     <!-- Section Main -->
     @include('home.main')
-
+    
+    @include('layouts.nav')
     <!-- Section Services -->
     @include('home.services')
     
@@ -13,12 +14,10 @@
     
     <!-- Section About -->
     @include('home.about')
-    <section id="services" class="snap-start bg-white/75 text-slate-900 dark:bg-slate-950 dark:text-white  bg-[url({{ asset('images/bg-wave-trans.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark-trans.svg') }})] bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[calc(100vh-400px)]">
-
-    </section>
-
-    <!-- Section Contact -->
-    @include('home.contact')
+    
+    <!-- Layout Background 
+    <div class="snap-start bg-white/75 text-slate-900 dark:bg-slate-950/80 dark:text-white  bg-[url({{ asset('images/bg-wave-trans.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark-trans.svg') }})] bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[100px]">
+    </div>-->
 
 
 @endsection
