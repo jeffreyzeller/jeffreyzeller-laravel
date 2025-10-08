@@ -15,7 +15,7 @@
         };
     </style>
     </head>
-    <body class=" bg-blue-100 dark:bg-gray-700 bg-[url('{{ asset('images/body-bg.jpg') }}')] bg-fixed bg-cover bg-center bg-no-repeat bg-blend-multiply">
+    <body class=" bg-blue-50 dark:bg-gray-700 bg-[url('{{ asset('images/body-bg.jpg') }}')] bg-fixed bg-cover bg-center bg-no-repeat bg-blend-multiply">
         @include('layouts.nav')
         <div class="scroll-smooth w-full overflow-y-scroll md:snap-y md:snap-mandatory fixed top-[72px] left-0  h-[calc(100vh-72px)]">
         @yield('content')
