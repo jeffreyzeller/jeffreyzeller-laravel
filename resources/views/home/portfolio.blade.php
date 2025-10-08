@@ -8,14 +8,14 @@
             @foreach($portfolio as $result)
 
             <div class="group relative bg-white dark:bg-blue-900 rounded-2xl overflow-hidden 
-                border border-slate-200 dark:border-blue-800 
+                border border-slate-200 dark:border-blue-800 h-100
                 hover:outline-blue-200 hover:outline-2 hover:outline-offset-4
                 shadow-md hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-1">
                 <img src="{{ asset('storage/' . $result->image) }}" alt="Project Screenshot" 
                     class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-90 transition-transform duration-500" />
                 <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <div class="absolute bottom-0 p-6">
+                <div class="absolute bottom-0 p-6 w-full">
                     <h3 class="text-xl font-semibold text-white">{{ $result->title }}</h3>
                     
                     <p class="text-slate-300 text-sm mt-1">
