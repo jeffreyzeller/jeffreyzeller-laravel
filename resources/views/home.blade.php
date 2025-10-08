@@ -6,6 +6,7 @@
     @include('home.main')
     
     @include('layouts.nav')
+    
     <!-- Section Services -->
     @include('home.services')
     

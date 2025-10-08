@@ -1,7 +1,7 @@
-<section id="home" class="relative snap-start bg-blue-200/95 text-slate-900 dark:bg-slate-900 dark:text-white overflow-hidden transition-colors duration-300">
+<section id="home" class="snap-start bg-blue-200/95 text-slate-900 dark:bg-slate-900 dark:text-white overflow-hidden transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
         
-            <!-- Text -->
+        <!-- Text -->
         <div class="max-w-5xl mx-auto md:flex">
             <div class="flex-1 space-y-6">
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight">
