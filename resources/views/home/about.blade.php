@@ -2,7 +2,7 @@
     <h2 class="text-4xl text-blue-700 dark:text-gray-100 font-bold mb-5">Crafting systems that work like you do.</h2>
     <p class="mb-5 font-semibold text-xl text-gray-600">You won’t get a templated site—you’ll get a system built precisely for how you operate.</p>
     <div class="max-w-5xl mx-auto flex flex-col sm:flex-row p-5">
-        <div class="flex-1 p-5 bg-white/100 shadow shadow-lg mr-5 dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-left rounded-xl outline-blue-500/50 outline-4 outline-offset-5">
+        <div class="flex-1 p-5 bg-white/100 shadow shadow-lg sm:mr-5 dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-left rounded-xl outline-blue-500/50 outline-4 outline-offset-5">
             <p class="mb-2">I’m a <strong>Laravel App Developer</strong> with over <strong>5 years of experience</strong> designing and building custom web applications that help businesses work smarter.</p>
             <p class="mb-2">My focus is on <strong>clean, functional UI design</strong> using <strong>TailwindCSS</strong> and <strong>Filament</strong>, crafted with precision and attention to user experience.</p>
             <p class="mb-2">Instead of relying on dozens of third-party plugins, I build features in-house — ensuring every application remains <strong>secure, stable, and easy to maintain</strong> for the long term.</p>
