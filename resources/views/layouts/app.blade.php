@@ -23,7 +23,7 @@
         }
     </style>
     </head>
-    <body class=" bg-blue-50 dark:bg-gray-700 bg-[url('{{ asset('images/body-bg.jpg') }}')] bg-fixed bg-cover bg-center bg-no-repeat bg-blend-multiply">
+    <body class=" bg-blue-50 dark:bg-gray-700 bg-[url('{{ asset('images/body-bg.jpg') }}')] bg-fixed bg-contain bg-center bg-no-repeat bg-blend-multiply">
         
         @yield('content')
 
