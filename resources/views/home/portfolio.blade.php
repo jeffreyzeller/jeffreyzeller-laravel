@@ -3,14 +3,14 @@
     <span class="md:hidden text-white dark:gray-100">Swipe right to view more</span>            
     
     <div class="lg:max-w-5xl mx-5 sm:mx-auto">    
-        <div class="flex sm:grid sm:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
+        <div class="sm:grid sm:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
             
             @foreach($portfolio as $result)
 
-            <div class="relative bg-white dark:bg-blue-900 rounded-2xl overflow-hidden 
-                border border-slate-200 dark:border-blue-800 h-100
-                hover:outline-blue-200 hover:outline-2 hover:outline-offset-4
-                shadow-md hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative bg-white dark:bg-gray-900 rounded-2xl overflow-hidden 
+                border border-slate-200 dark:border-gray-700 h-100
+                hover:outline-blue-200 dark:hover:outline-gray-700 hover:outline-2 hover:outline-offset-4
+                shadow-sm hover:shadow-white/20 dark:hover:shadow-gray-500/20 transition-all duration-300 hover:-translate-y-1">
                 <img src="{{ asset('storage/' . $result->image) }}" alt="Project Screenshot" 
                     class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-90 transition-transform duration-500" />
                 <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
