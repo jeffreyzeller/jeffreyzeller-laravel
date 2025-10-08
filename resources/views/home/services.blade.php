@@ -43,6 +43,6 @@
         </div>
     </div>
     <div class="lg:max-w-4xl mx-auto text-neutral-200 px-5 py-10 text-center content-center">
-        <a class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-lg shadow-lg w-full px-5 py-2 mx-auto text-xl lg:leading-[5rem]">Schedule an Appointment</a>
+        <a class="bg-orange-500 dark:bg-orange-600 text-white dark:text-gray-100 rounded-lg shadow-lg w-full px-5 py-3 mx-auto text-xl font-bold lg:leading-[5rem]">Schedule an Appointment</a>
     </div>
 </section>
