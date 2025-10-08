@@ -1,13 +1,13 @@
 <section id="home" class="w-full text-center sm:content-center bg-transparent/100 snap-start min-h-[calc(100vh-72px)]">
     <div class="sm:flex items-center justify-center w-full transition-opacity opacity-100 duration-500 lg:grow starting:opacity-0">
-        <main class="flex w-full flex-col max-w-5xl sm:flex-row md:p-5 sm:rounded-lg bg-blue-700 dark:bg-gray-800 lg:outline-7 lg:outline-white sm:shadow-gray-700 dark:shadow-gray-800 sm:shadow-xl">
+        <main class="flex w-full flex-col max-w-5xl sm:flex-row md:p-5 sm:rounded-lg bg-blue-700 dark:bg-gray-800 lg:outline-7 lg:outline-white dark:lg:outline-gray-400 sm:shadow-gray-700 dark:shadow-gray-800 sm:shadow-xl">
             <div class="shrink text-center content-center flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
                 
-                <h1 class="mb-1 font-bold text-5xl sm:text-4xl md:text-5xl text-white dark:text-gray-100 text-left">
+                <h1 class="mb-1 font-bold text-5xl sm:text-4xl md:text-5xl text-white dark:text-gray-300 text-left">
                     Custom Built<br />
                     Administrative &amp Client Panels
                 </h1>
-                <p class="mb-2 text-gray-100 dark:text-gray-100 font-semibold text-left text-base font-mono">Every business is different in design, I make Web Applications that are tailored for the individual needs of your business.</p>
+                <p class="mb-2 text-gray-100 dark:text-gray-300 font-semibold text-left text-base font-mono">Every business is different in design, I make Web Applications that are tailored for the individual needs of your business.</p>
                 <ul class="flex flex-col mb-4 lg:mb-6 text-white dark:text-gray-100">
                     <li class="flex items-center gap-4 py-2">
                         <span class=" py-1">
