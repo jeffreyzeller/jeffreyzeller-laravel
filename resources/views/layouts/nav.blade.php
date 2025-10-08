@@ -1,9 +1,9 @@
 <!-- Navigation -->
-<nav class="bg-gray-100 border-gray-200 dark:bg-gray-900 fixed w-full top-0 z-50">
+<nav class="xs:bg-blue-700 sm:bg-gray-100 border-gray-200 dark:bg-gray-900 fixed w-full top-0 z-50">
     <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://www.jeffreyzeller.com" class="flex items-center space-x-3 rtl:space-x-reverse">
             <!-- <img src="#" class="h-8" alt="Jeffrey Zeller Logo" /> -->
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-mono text-blue-600">jeffreyzeller.com</span>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-mono  xs:text-white sm:text-blue-700">jeffreyzeller.com</span>
         </a>
         <!-- Toggle Button -->
         <button id="nav-toggle" type="button"
@@ -14,7 +14,7 @@
           aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
