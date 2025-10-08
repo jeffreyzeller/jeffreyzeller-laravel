@@ -1,4 +1,4 @@
-<section id="portfolio" class="w-full text-center content-center bg-white/90 dark:bg-gray-900/80 snap-start min-h-[calc(100vh)]">
+<section id="portfolio" class="w-full text-center content-center bg-white/80 dark:bg-gray-900/80 snap-start min-h-[calc(100vh)]">
     
     <h2 id="portfolio" class="text-4xl text-gray-900 dark:text-gray-100 font-bold leading-[5rem]">PORTFOLIO</h2>    
     <span class="md:hidden text-gray-900 dark:text-white">Scroll Right to view more.</span>            
