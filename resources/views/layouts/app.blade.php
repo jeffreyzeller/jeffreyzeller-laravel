@@ -12,7 +12,15 @@
         }
         .active {
             background: color-mix(in oklab, var(--color-gray-900) 20%, transparent);
-        };
+        }
+        .flip {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
     </style>
     </head>
     <body class=" bg-blue-50 dark:bg-gray-700 bg-[url('{{ asset('images/body-bg.jpg') }}')] bg-fixed bg-cover bg-center bg-no-repeat bg-blend-multiply">

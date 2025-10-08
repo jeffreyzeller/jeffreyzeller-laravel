@@ -6,7 +6,7 @@
                 <h1 class="mb-1 font-bold text-5xl sm:text-5xl md:text-5xl lg:text-6xl sm:font-black text-white dark:text-gray-300 text-left">
                     Tailored Web Applications for Your Workflow
                 </h1>
-                <p class="mb-2 text-gray-100 dark:text-gray-300 font-semibold text-left text-base font-mono">Your business isn’t cookie-cutter — your software shouldn’t be either. I design web applications built around your workflows, giving you the exact tools your team and clients need to get things done.</p>
+                <p class="mb-2 text-gray-100 dark:text-gray-300 font-semibold text-justify text-base font-mono">Your business isn’t cookie-cutter — your software shouldn’t be either. I design web applications built around your workflows, giving you the exact tools your team and clients need to get things done.</p>
                 
                 <a href="#contact" target="_self" class="w-full lg:w-200 inline-block dark:bg-blue-700 dark:border-slate-500 dark:text-[#1C1C1A] dark:hover:bg-blue-600 dark:hover:border-white px-5 py-3 shadow border-black bg-orange-500 text-white font-bold rounded
                 transition delay-150 duration-300 ease-in-out hover:scale-105">
@@ -15,7 +15,7 @@
                 
             </div>
             <div class="order-first lg:order-last mx-3 py-3 sm:py-0 sm:mx-0 shrink min-w-85">
-                <div class="mx-auto border border-white overflow-hidden max-w-150 lg:max-w-100 flex rounded outline outline-offset-1 outline-white">
+                <div class="mx-auto border border-white overflow-hidden max-w-150 lg:max-w-125 flex rounded outline outline-offset-1 outline-white">
                     <div class="bg-white rounded-l p-2 text-xs text-left border-l border-y border-gray-500">
 
                         <span class="inline-block text-sm font-bold">JeffreyZeller</span><br />
@@ -31,7 +31,7 @@
                     </div>
                     <div class="bg-blue-600 dark:bg-gray-700 w-full sm:w-100 rounded-r p-1 border-r border-y border-gray-500">
                         <h2 class="text-left text-white font-bold">Portfolio<div class="bg-red-100 aspect-square rounded-full h-4 float-right text-xs text-gray-400 pl-[5px]"></div><div class="bg-gray-100 aspect-square rounded-full h-4 float-right text-xs text-gray-400 pl-[5px] mr-1"></div></h2>
-                        <div class="bg-white w-full h-75 lg:h-40 rounded text-left p-2 grid grid-cols-2 gap-2">
+                        <div class="bg-white w-full h-50 lg:h-40 rounded text-left p-2 grid grid-cols-2 gap-2">
                             
                             <div class="bg-slate-200 p-5 rounded-xs"></div>
                             <div class="bg-slate-200 p-5 rounded-xs"></div>

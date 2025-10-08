@@ -1,4 +1,4 @@
-<section id="services" class="w-full text-center content-center bg-blue-700 dark:bg-gray-600 snap-start min-h-[calc(100vh-72px)]">
+<section id="services" class="w-full text-center content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[calc(100vh-72px)]">
     <h2 class="text-4xl text-center text-neutral-200 font-bold py-5 mt-5">Services</h2>
     
     <div class="grid sm:grid-cols-3 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-3 p-5">
