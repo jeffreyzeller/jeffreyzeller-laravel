@@ -1,5 +1,5 @@
-<section id="services" class="w-full text-center content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[calc(100vh-72px)]">
-    <h2 id="portfolio" class="text-4xl text-white dark:text-gray-100 font-bold leading-[5rem]">My Recent Work</h2>    
+<section id="services" class="w-full text-center content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[calc(100vh-300px)]">
+    <h2 id="portfolio" class="text-5xl text-white dark:text-gray-100 font-bold">My Recent Work</h2>    
     <span class="md:hidden text-gray-900 dark:text-white">Scroll Right to view more.</span>            
     
     <div class="lg:max-w-5xl mx-5 sm:mx-auto">    

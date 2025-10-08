@@ -5,16 +5,16 @@
    width="960"
    height="540"
    version="1.1"
-   sodipodi:docname="bg-wave-dark-trans.svg"
+   sodipodi:docname="bg-wave-dark.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs5271" />
+     id="defs9" />
   <sodipodi:namedview
-     id="namedview5269"
+     id="namedview7"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="2.1046561"
-     inkscape:cx="705.57846"
-     inkscape:cy="369.41902"
+     inkscape:zoom="1.2854167"
+     inkscape:cx="480"
+     inkscape:cy="271.11831"
      inkscape:window-width="1862"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -37,5 +37,5 @@
      fill="#1e2939"
      stroke-linecap="round"
      stroke-linejoin="miter"
-     id="path5266" />
+     id="path4" />
 </svg>

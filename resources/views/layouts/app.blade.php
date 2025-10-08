@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class=" scroll-smooth overflow-y-scroll md:snap-y md:snap-mandatory">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,11 +25,9 @@
     </head>
     <body class=" bg-blue-50 dark:bg-gray-700 bg-[url('{{ asset('images/body-bg.jpg') }}')] bg-fixed bg-cover bg-center bg-no-repeat bg-blend-multiply">
         @include('layouts.nav')
-        <div class="scroll-smooth w-full overflow-y-scroll md:snap-y md:snap-mandatory fixed top-[72px] left-0  h-[calc(100vh-72px)]">
         @yield('content')
 
         @include('layouts.footer')
-        </div>
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <!-- <div class="elfsight-app-708553fe-5e5d-4f26-92bd-4a1f5833ea13" data-elfsight-app-lazy></div> -->
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
