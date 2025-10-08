@@ -15,7 +15,7 @@
                 <div class="flex flex-wrap gap-4">
                     <a href="#contact" 
                     class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-lg shadow-blue-600/20 transition">
-                        Book a Free Consultation
+                        <x-heroicon-s-calendar-days class=" inline w-4 mr-1" /> Book a Free Consultation
                     </a>
                     <a href="#portfolio" 
                     class="px-6 py-3 border border-slate-50 hover:border-blue-400 text-slate-700 hover:text-blue-600 dark:border-slate-600 dark:text-slate-300 dark:hover:text-blue-300 rounded-xl transition">

@@ -1,4 +1,4 @@
-<section id="contact" class="w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[300px] pt-20">
+<section id="contact" class="w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[590px] pt-20">
     
     <h2 class="text-4xl text-white font-bold mb-5">CONTACT</h2>
     

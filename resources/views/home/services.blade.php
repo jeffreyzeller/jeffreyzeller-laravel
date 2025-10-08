@@ -39,7 +39,7 @@
     <div class="text-center mt-20">
         <a href="#contact" 
            class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg shadow-blue-600/30 transition">
-            Let’s Build Yours
+            <x-heroicon-s-chat-bubble-left-right class=" inline w-4 mr-1" /> Let’s Build Yours
         </a>
     </div>
 </section>
