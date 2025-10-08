@@ -67,14 +67,14 @@
                     </form>
                 </div>
                 
-                <div class="hidden rounded-lg  text-white dark:text-gray-100" id="styled-appointment" role="tabpanel" aria-labelledby="appointment-tab">
-                                        
-                        <p class="mb-5">Want to discuss your idea more? Click the button below to view my availability and schedule an appointment when we are both available.</p>
-                        
+                <div class="hidden" id="styled-appointment" role="tabpanel" aria-labelledby="appointment-tab">
+                        <div class="bg-white dark:bg-gray-600 rounded-t-lg text-gray-800 p-5 dark:text-gray-100 mb-2">                
+                        <p class="mb-2">Got an idea you’re excited about? Let’s bring it to life — click below to see my schedule and book a chat. I’d love to help you turn your vision into a website that stands out.</p>
+                        </div>
                         <!-- Calendly link widget begin -->
                         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                        <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-lg p-3 w-full" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Book a Meeting</a>
+                        <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-b-lg p-3 w-full" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Book a Meeting</a>
                         <!-- Calendly link widget end -->
 
                 </div>

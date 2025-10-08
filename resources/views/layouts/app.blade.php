@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <title>Jeffrey Zeller | Freelance Web Developer</title>
     <style>
+        .fill-white {
+            fill: #FFFFFF
+        }
         .active {
             background: color-mix(in oklab, var(--color-gray-900) 20%, transparent);
         };

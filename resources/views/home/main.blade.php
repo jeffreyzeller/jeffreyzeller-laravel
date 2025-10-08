@@ -4,10 +4,9 @@
             <div class="shrink text-center content-center flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
                 
                 <h1 class="mb-1 font-bold text-5xl sm:text-5xl md:text-5xl lg:text-8xl text-white dark:text-gray-300 text-left">
-                    Custom Built<br />
-                    Administrative &amp Client Panels
+                    Custom-Built Admin & Client Dashboards
                 </h1>
-                <p class="mb-2 text-gray-100 dark:text-gray-300 font-semibold text-left text-base font-mono">Every business is different in design, I make Web Applications that are tailored for the individual needs of your business.</p>
+                <p class="mb-2 text-gray-100 dark:text-gray-300 font-semibold text-left text-base font-mono">Your business isn’t cookie-cutter — your software shouldn’t be either. I design web applications built around your workflows, giving you the exact tools your team and clients need to get things done.</p>
                 <ul class="flex flex-col mb-4 lg:mb-6 text-white dark:text-gray-100">
                     <li class="flex items-center gap-4 py-2">
                         <span class=" py-1">
