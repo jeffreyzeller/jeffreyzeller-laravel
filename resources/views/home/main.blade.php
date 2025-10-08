@@ -1,6 +1,6 @@
 <section id="home" class="w-full text-center content-center bg-transparent/100 snap-start min-h-[calc(100vh-72px)]">
     <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-500 lg:grow starting:opacity-0">
-        <main class="flex w-full flex-col max-w-5xl sm:flex-row md:p-5 sm:rounded-lg bg-blue-700 dark:bg-gray-800 outline-7 outline-white shadow-gray-700 dark:shadow-gray-800 shadow-xl">
+        <main class="flex w-full flex-col max-w-5xl sm:flex-row md:p-5 sm:rounded-lg bg-blue-700 dark:bg-gray-800 lg:outline-7 outline-white shadow-gray-700 dark:shadow-gray-800 lg:shadow-xl">
             <div class="shrink text-center content-center flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
                 
                 <h1 class="mb-1 font-bold text-5xl sm:text-4xl md:text-5xl text-white dark:text-gray-100 text-left">
