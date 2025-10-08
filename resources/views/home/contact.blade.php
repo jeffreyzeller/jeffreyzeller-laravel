@@ -13,7 +13,7 @@
                     </li>
                     <li class="me-2" role="presentation">
                         <button class="inline-block p-4 border-b-5 rounded-t-lg" id="appointment-styled-tab" data-tabs-target="#styled-appointment" type="button" role="tab" aria-controls="appointment" aria-selected="false">
-                           <x-heroicon-o-calendar-days class=" inline w-6 h-6 mr-1" /> Sechedule Appointment
+                           <x-heroicon-o-calendar-days class=" inline w-6 h-6 mr-1" /> Book Appointment
                         </button>
                     </li>
                 </ul>
@@ -74,7 +74,7 @@
                         <!-- Calendly link widget begin -->
                         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                        <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-b-lg p-3 w-full" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Book a Meeting</a>
+                        <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-b-lg p-3 w-full" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Schedule a Meeting</a>
                         <!-- Calendly link widget end -->
 
                 </div>

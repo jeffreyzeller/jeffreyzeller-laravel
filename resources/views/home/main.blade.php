@@ -3,7 +3,7 @@
         <main class="flex w-full flex-col max-w-5xl sm:flex-row md:p-5 sm:rounded-lg bg-blue-700 dark:bg-gray-800 xl:outline-7 xl:outline-white dark:lg:outline-gray-400 sm:shadow-gray-700 dark:shadow-gray-800 xl:shadow-xl">
             <div class="shrink text-center content-center flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
                 
-                <h1 class="mb-1 font-bold text-5xl sm:text-5xl md:text-5xl lg:text-8xl text-white dark:text-gray-300 text-left">
+                <h1 class="mb-1 font-bold text-5xl sm:text-5xl md:text-5xl lg:text-6xl sm:font-black text-white dark:text-gray-300 text-left">
                     Custom-Built Admin & Client Dashboards
                 </h1>
                 <p class="mb-2 text-gray-100 dark:text-gray-300 font-semibold text-left text-base font-mono">Your business isn’t cookie-cutter — your software shouldn’t be either. I design web applications built around your workflows, giving you the exact tools your team and clients need to get things done.</p>
