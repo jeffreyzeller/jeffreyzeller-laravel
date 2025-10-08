@@ -74,7 +74,7 @@
                         <!-- Calendly link widget begin -->
                         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                        <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-b-lg p-3 w-full" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Check Availability</a>
+                        <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-b-lg p-3 w-full" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Check My Availability</a>
                         <!-- Calendly link widget end -->
 
                 </div>
