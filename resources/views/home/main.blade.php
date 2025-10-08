@@ -1,14 +1,14 @@
 <section id="home" class="w-full text-center content-center bg-transparent/100 snap-start min-h-[calc(100vh-72px)]">
-    <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
-        <main class="flex w-full flex-col max-w-5xl sm:flex-row rounded-lg bg-white dark:bg-gray-800 md:p-5">
-            <div class="shrink text-center content-center text-[13px] leading-[20px] flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
+    <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-500 lg:grow starting:opacity-0">
+        <main class="flex w-full flex-col max-w-5xl sm:flex-row md:p-5 sm:rounded-lg bg-blue-700 dark:bg-gray-800 outline-7 outline-white shadow-gray-700 dark:shadow-gray-800 shadow-xl">
+            <div class="shrink text-center content-center flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
                 
-                <h1 class="mb-1 font-bold text-3xl sm:text-4xl md:text-5xl text-gray-800 dark:text-gray-100 text-left">
+                <h1 class="mb-1 font-bold text-5xl sm:text-4xl md:text-5xl text-white dark:text-gray-100 text-left">
                     Custom Built<br />
                     Administrative &amp Client Panels
                 </h1>
-                <p class="mb-2 text-gray-800 dark:text-gray-100 font-semibold text-left text-base font-mono">Every business is different in design, I make Web Applications that are tailored for the individual needs of your business.</p>
-                <ul class="flex flex-col mb-4 lg:mb-6 text-gray-900 dark:text-gray-100">
+                <p class="mb-2 text-gray-100 dark:text-gray-100 font-semibold text-left text-base font-mono">Every business is different in design, I make Web Applications that are tailored for the individual needs of your business.</p>
+                <ul class="flex flex-col mb-4 lg:mb-6 text-white dark:text-gray-100">
                     <li class="flex items-center gap-4 py-2">
                         <span class=" py-1">
                             <span class="flex items-center justify-center rounded-full bg-[#FDFDFC] dark:bg-[#161615] shadow-[0px_0px_1px_0px_rgba(0,0,0,0.03),0px_1px_2px_0px_rgba(0,0,0,0.06)] w-3.5 h-3.5 border dark:border-[#3E3E3A] border-[#e3e3e0]">
@@ -38,9 +38,9 @@
                         </span>
                     </li>
                 </ul>
-                <ul class="flex gap-3 text-sm leading-normal">
+                <ul class="flex gap-3">
                     <li>
-                        <a href="#contact" target="_self" class="inline-block dark:bg-blue-700 dark:border-slate-500 dark:text-[#1C1C1A] dark:hover:bg-blue-600 dark:hover:border-white hover:bg-black hover:border-black px-5 py-1.5 shadow border-black bg-blue-700 text-white rounded-lg">
+                        <a href="#contact" target="_self" class="inline-block dark:bg-blue-700 dark:border-slate-500 dark:text-[#1C1C1A] dark:hover:bg-blue-600 dark:hover:border-white hover:bg-black hover:border-black px-5 py-1.5 shadow border-black bg-orange-500 text-white rounded">
                             Contact Me
                         </a>
                     </li>

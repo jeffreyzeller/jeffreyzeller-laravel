@@ -12,9 +12,9 @@
         };
     </style>
     </head>
-    <body>
+    <body class="bg-[url({{ asset('images/bg-wave.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark.svg') }})] bg-cover no-repeat bg-top">
         @include('layouts.nav')
-        <div class="w-full bg-[url({{ asset('images/bg-wave.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark.svg') }})] bg-fixed bg-bottom bg-cover h-[calc(100vh-72px)] overflow-y-scroll snap-y snap-mandatory fixed top-[72] left-0">
+        <div class="w-full overflow-y-scroll snap-y snap-mandatory fixed top-[72] left-0  h-[calc(100vh-72px)]">
         @yield('content')
         </div>
         @include('layouts.footer')
