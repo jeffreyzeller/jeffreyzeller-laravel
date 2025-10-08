@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="lg:max-w-4xl mx-auto text-neutral-200 px-5 py-10 text-center content-center">
-        <a class="bg-orange-500 dark:bg-orange-600 text-white dark:text-gray-100 rounded-lg shadow-lg w-full px-5 py-3 mx-auto text-xl font-bold lg:leading-[5rem]">
+        <a href="#contact" class="inline-block bg-orange-500 dark:bg-orange-600 text-white dark:text-gray-100 rounded-lg shadow-lg  w-75 px-5 py-3 mx-auto text-xl font-bold  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
             <x-heroicon-o-phone class=" inline w-6 h-6 mr-3" /> Schedule an Call
         </a>
     </div>
