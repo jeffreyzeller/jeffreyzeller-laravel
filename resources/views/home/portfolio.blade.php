@@ -10,12 +10,18 @@
                 <div class="w-full aspect-16/12 bg-black bg-[url({{ asset('storage/' . $result->image) }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
                     
                 </div>
-                <div class="p-5 font-bold rounded-b text-left">
+                <div class="p-5 text-lg font-bold rounded-b text-left">
                     {{ $result->title }}<br />
                     
                     @foreach($result->tags as $tag)
                     <span class="bg-blue-600 text-xs text-white px-2 py-1 rounded-full">{{ $tag }}</span>
                     @endforeach
+                </div>
+                <div class="p-5 font-bold rounded-b text-left">
+                    <a href="" 
+                    class="block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-lg shadow-blue-600/20 transition">
+                        <x-heroicon-s-viewfinder-circle class=" inline w-4 mr-1" /> View Project Outline
+                    </a>
                 </div>
             </div>
             @endforeach
