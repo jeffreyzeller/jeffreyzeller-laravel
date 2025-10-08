@@ -1,6 +1,5 @@
-<section id="portfolio" class="w-full text-center content-center bg-white/80 dark:bg-gray-900/80 snap-start min-h-[calc(100vh)] bg-[url({{ asset('images/bg-wave-trans-flipped.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark-trans-flipped.svg') }})] bg-cover bg-no-repeat bg-top">
-    
-    <h2 id="portfolio" class="text-4xl text-gray-900 dark:text-gray-100 font-bold leading-[5rem]">PORTFOLIO</h2>    
+<section id="services" class="w-full text-center content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[calc(100vh-72px)]">
+    <h2 id="portfolio" class="text-4xl text-white dark:text-gray-100 font-bold leading-[5rem]">My Recent Work</h2>    
     <span class="md:hidden text-gray-900 dark:text-white">Scroll Right to view more.</span>            
     
     <div class="lg:max-w-5xl mx-5 sm:mx-auto">    

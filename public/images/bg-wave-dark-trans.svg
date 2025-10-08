@@ -24,8 +24,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="2.1046561"
-     inkscape:cx="705.57845"
-     inkscape:cy="368.94388"
+     inkscape:cx="705.57846"
+     inkscape:cy="369.41902"
      inkscape:window-width="1862"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -33,8 +33,8 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="visual" />
   <path
-     d="M0 350L53.3 337C106.7 324 213.3 298 320 301.8C426.7 305.7 533.3 339.3 640 354.7C746.7 370 853.3 367 906.7 365.5L960 364L960 541L906.7 541C853.3 541 746.7 541 640 541C533.3 541 426.7 541 320 541C213.3 541 106.7 541 53.3 541L0 541Z"
-     fill="#1E2939"
+     d="m 0,510 53.3,-13 c 53.4,-13 160,-39 266.7,-35.2 106.7,3.9 213.3,37.5 320,52.9 106.7,15.3 213.3,12.3 266.7,10.8 L 960,524 v 177 h -53.3 c -53.4,0 -160,0 -266.7,0 -106.7,0 -213.3,0 -320,0 -106.7,0 -213.3,0 -266.7,0 H 0 Z"
+     fill="#1e2939"
      stroke-linecap="round"
      stroke-linejoin="miter"
      id="path5266" />

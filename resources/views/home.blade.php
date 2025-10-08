@@ -11,6 +11,9 @@
     <!-- Section Portfolio -->
     @include('home.portfolio')
 
+    <!-- Section About -->
+    @include('home.about')
+
     <!-- Section Contact -->
     @include('home.contact')
 
