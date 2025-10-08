@@ -1,4 +1,4 @@
-<section id="home" class="w-full text-center lg:content-center bg-transparent/100 snap-start min-h-[calc(100vh-72px)]">
+<section id="home" class="w-full text-center lg:content-center snap-start min-h-[calc(100vh-72px)] bg-[url({{ asset('images/bg-wave-trans.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark-trans.svg') }})] bg-cover bg-no-repeat bg-top">
     <div class="lg:flex items-center justify-center w-full transition-opacity opacity-100 duration-500 lg:grow starting:opacity-0">
         <main class="flex lg:w-full flex-col max-w-5xl lg:flex-row md:p-5 lg:rounded-lg bg-blue-700 dark:bg-gray-800 lg:outline-7 lg:outline-white dark:lg:outline-gray-400 sm:shadow-gray-700 dark:shadow-gray-800 xl:shadow-xl">
             <div class="max-w-150 lg:max-w-full mx-auto shrink text-center content-center flex-1 sm:p-6 pb-12 p-5 lg:pt-0">
