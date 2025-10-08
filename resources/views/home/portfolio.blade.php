@@ -6,21 +6,26 @@
         <div class="flex sm:grid sm:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
             
             @foreach($portfolio as $result)
-            <div class="shrink-0 bg-slate-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 grid w-full lg:w-auto snap-center my-3 duration-100 rounded-xl shadow hover:cursor-pointer hover:outline-blue-200 hover:outline-2 hover:outline-offset-4">
-                <div class="w-full aspect-16/12 bg-black bg-[url({{ asset('storage/' . $result->image) }})] bg-center bg-cover bg-no-repeat bg-top rounded-t-xl">
+
+            <div class="group relative bg-white dark:bg-blue-900 rounded-2xl overflow-hidden 
+                border border-slate-200 dark:border-blue-800 
+                hover:outline-blue-200 hover:outline-2 hover:outline-offset-4
+                shadow-md hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-1">
+                <img src="{{ asset('storage/' . $result->image) }}" alt="Project Screenshot" 
+                    class="w-full h-56 object-cover group-hover:scale-105 group-hover:brightness-90 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div class="absolute bottom-0 p-6">
+                    <h3 class="text-xl font-semibold text-white">Fleet Management Dashboard</h3>
                     
-                </div>
-                <div class="p-5 text-lg font-bold rounded-b text-left">
-                    {{ $result->title }}<br />
-                    
-                    @foreach($result->tags as $tag)
-                    <span class="bg-gray-400 text-xs text-white px-2 py-1 rounded-full">{{ $tag }}</span>
-                    @endforeach
-                </div>
-                <div class="px-5 pb-5 font-bold rounded-b text-left">
-                    <a  data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}" 
-                    class="block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-lg transition">
-                        <x-heroicon-s-viewfinder-circle class=" inline w-4 mr-1" /> View Case Study
+                    <p class="text-slate-300 text-sm mt-1">
+                        @foreach($result->tags as $tag)
+                            <span class="px-2 py-1 bg-slate-200 dark:bg-slate-800 text-xs text-slate-700 dark:text-slate-300 rounded">{{ $tag }}</span>
+                        @endforeach
+                    </p>
+                    <a data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}"  
+                    class="inline-block mt-3 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-white text-sm font-medium cursor-pointer">
+                    <x-heroicon-s-viewfinder-circle class=" inline w-4 mr-1" />  View Project
                     </a>
                 </div>
             </div>
