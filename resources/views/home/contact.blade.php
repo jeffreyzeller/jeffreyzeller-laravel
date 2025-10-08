@@ -8,12 +8,12 @@
                 <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-blue-600 dark:text-white bg-white dark:bg-gray-900 hover:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500" data-tabs-inactive-classes="dark:border-transparent text-white hover:text-gray-300 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
                     <li class="me-2" role="presentation">
                         <button class="inline-block p-4 border-b-5 rounded-t-lg" id="message-styled-tab" data-tabs-target="#styled-message" type="button" role="tab" aria-controls="message" aria-selected="false">
-                            <x-heroicon-o-envelope class=" inline w-6 h-6 mr-3" /> Message Me
+                            <x-heroicon-o-envelope class=" inline w-6 h-6 mr-1" /> Message Me
                         </button>
                     </li>
                     <li class="me-2" role="presentation">
                         <button class="inline-block p-4 border-b-5 rounded-t-lg" id="appointment-styled-tab" data-tabs-target="#styled-appointment" type="button" role="tab" aria-controls="appointment" aria-selected="false">
-                           <x-heroicon-o-calendar-days class=" inline w-6 h-6 mr-3" /> Sechedule Appointment
+                           <x-heroicon-o-calendar-days class=" inline w-6 h-6 mr-1" /> Sechedule Appointment
                         </button>
                     </li>
                 </ul>
