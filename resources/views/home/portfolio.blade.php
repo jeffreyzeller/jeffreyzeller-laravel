@@ -3,7 +3,7 @@
     <span class="md:hidden text-white dark:gray-100">Swipe right to view more</span>            
     
     <div class="lg:max-w-5xl mx-5 sm:mx-auto">    
-        <div class="sm:grid sm:grid-cols-3 md:gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
+        <div class="sm:grid sm:grid-cols-3 gap-3 snap-x overflow-x-scroll md:overflow-hidden snap-mandatory w-full mx:auto md:p-3">
             
             @foreach($portfolio as $result)
 
