@@ -41,7 +41,7 @@
                 <ul class="sm:flex gap-3">
                     <li>
                         <a href="#contact" target="_self" class="w-full inline-block dark:bg-blue-700 dark:border-slate-500 dark:text-[#1C1C1A] dark:hover:bg-blue-600 dark:hover:border-white hover:bg-black hover:border-black px-5 py-3 shadow border-black bg-orange-500 text-white font-bold rounded">
-                            Contact Me
+                            Book a Meeting
                         </a>
                     </li>
                 </ul>
