@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Portfolios\Schemas;
 
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
@@ -27,7 +28,7 @@ class PortfolioForm
                         TextInput::make('url')
                             ->url()
                             ->required(),
-                        MarkdownEditor::make('description')
+                        RichEditor::make('description')
                             ->required()
                             ->columnSpanFull()
                             ->fileAttachmentsAcceptedFileTypes(['image/png', 'image/jpeg'])

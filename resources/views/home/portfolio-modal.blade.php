@@ -18,7 +18,7 @@
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $result->title }}</h3>
                     <span class="text-sm font-light">{{ $result->url }}</span><br />
                     <div>
-                        {{ $result->description }}
+                        {!! str($result->description)->sanitizeHtml() !!}
                     </div>
 
                     <!-- Modal footer -->

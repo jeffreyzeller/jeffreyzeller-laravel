@@ -6,6 +6,7 @@ use App\Filament\Resources\Portfolios\PortfolioResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\EditRecord;
+use Illuminate\Support\Facades\Storage;
 
 class EditPortfolio extends EditRecord
 {
