@@ -16,9 +16,9 @@
                 
                 <div class="absolute bottom-0 p-6 w-full">
                     <h3 class="text-xl font-semibold text-gray-200">{{ $result->title }}</h3>
-                    <p class="text-slate-300 text-sm mt-1">
+                    <p class="text-slate-300 text-sm text-left mt-1">
                         @foreach($result->tags as $tag)
-                            <span class="px-2 py-1 bg-slate-200 dark:bg-slate-800 text-xs text-slate-700 dark:text-slate-300 rounded">{{ $tag }}</span>
+                            <span class="inline-block px-2 py-1 mb-1 bg-slate-200 dark:bg-slate-800 text-xs text-slate-700 dark:text-slate-300 rounded">{{ $tag }}</span>
                         @endforeach
                     </p>
                     <a data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}"  
