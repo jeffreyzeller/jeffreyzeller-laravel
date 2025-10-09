@@ -24,7 +24,8 @@
     </style>
     </head>
     <body class=" bg-blue-50 dark:bg-gray-700 bg-[url('{{ asset('images/body-bg.jpg') }}')] bg-fixed bg-contain bg-center bg-no-repeat bg-blend-multiply">
-        
+        @yield('hero')
+        @include('layouts.nav')
         @yield('content')
 
         <!-- Section Contact -->
@@ -34,5 +35,25 @@
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <!-- <div class="elfsight-app-708553fe-5e5d-4f26-92bd-4a1f5833ea13" data-elfsight-app-lazy></div> -->
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    </body>
+
+        <script>
+        // Fix flowbite error when modal closes
+        document.addEventListener('DOMContentLoaded', () => {
+            // only patch once Flowbite is ready
+            if (window.Modal && Modal.prototype.hide) {
+                const originalHide = Modal.prototype.hide;
+
+                Modal.prototype.hide = function() {
+                // run Flowbite's normal hide process
+                originalHide.call(this);
+
+                // now add your focus/accessibility improvements
+                this._targetEl.inert = true;
+                document.activeElement?.blur();
+                };
+            }
+        });
+        </script>
+
+
 </html>

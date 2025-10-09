@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Contact;
 use App\Http\Controllers\Home;
+use App\Http\Controllers\PortfolioController;
 use App\Models\Portfolio;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
@@ -35,5 +36,5 @@ Route::middleware(['auth'])->group(function () {
         ->name('two-factor.show');
 });
 // END OF LARAVEL LIVEWIRE & FLUX PANEL
-
+Route::resource('portfolio', PortfolioController::class);
 require __DIR__.'/auth.php';

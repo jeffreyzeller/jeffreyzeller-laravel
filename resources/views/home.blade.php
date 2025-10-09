@@ -1,11 +1,13 @@
 @extends('layouts.app')
+@section('hero')
 
+@endsection
+
+    @include('home.main')
 @section('content')
     
     <!-- Section Main -->
-    @include('home.main')
     
-    @include('layouts.nav')
     
     <!-- Section Services -->
     @include('home.services')

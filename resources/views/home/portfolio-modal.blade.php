@@ -4,7 +4,7 @@
         <!-- Modal content -->
         <div class="relative bg-gray-200 rounded-lg  dark:bg-gray-700 shadow-lg shadow-slate-950">
             <!-- Modal body -->
-            <div class="md:p-5 sm:flex text-gray-900 dark:text-white">
+            <div class="md:p-5 text-gray-900 dark:text-white">
                 <div>
                     <img class="w-full rounded-t-lg sm:rounded-lg" src="{{ asset('storage/' . $result->image) }}">
                 </div>
