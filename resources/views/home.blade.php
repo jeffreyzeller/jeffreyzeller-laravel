@@ -1,9 +1,8 @@
 @extends('layouts.app')
 @section('hero')
 
-@endsection
-
     @include('home.main')
+@endsection
 @section('content')
     
     <!-- Section Main -->
