@@ -17,8 +17,10 @@
     </style>
     </head>
     <body>
-        @yield('hero')
         @include('layouts.nav')
+
+        @yield('hero')
+
         @yield('content')
 
         <!-- Section Contact -->
