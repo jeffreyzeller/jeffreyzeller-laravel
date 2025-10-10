@@ -15,7 +15,7 @@
                 <span class="bg-blue-500 text-xs text-white px-2 py-1 rounded-full">{{ $tag }}</span>
                 @endforeach
             </div>
-            <div>
+            <div class="p-5">
                 {!! str($portfolio->description)->sanitizeHtml() !!}
             </div>
         </div>
