@@ -10,17 +10,13 @@
         <div class="p-5">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $portfolio->title }}</h3>
             <span class="text-sm font-light">{{ $portfolio->url }}</span><br />
-            <div>
-                
-                {!! str($portfolio->description)->sanitizeHtml() !!}
-
-            </div>
-
-            <!-- Modal footer -->
             <div class="font-bold rounded-b text-left sm:absolute bottom-5">
                 @foreach($portfolio->tags as $tag)
                 <span class="bg-blue-500 text-xs text-white px-2 py-1 rounded-full">{{ $tag }}</span>
                 @endforeach
+            </div>
+            <div>
+                {!! str($portfolio->description)->sanitizeHtml() !!}
             </div>
         </div>
     </div>
