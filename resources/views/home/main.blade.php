@@ -22,9 +22,9 @@
                         View My Work
                     </a>
                     
-                    <!-- <button id="theme-toggle" class="p-2 rounded-lg bg-gray-700 text-gray-100 hover:bg-gray-600 transition">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-gray-700 text-gray-100 hover:bg-gray-600 transition">
                         <span id="theme-label">Dark</span>
-                    </button> -->
+                    </button>
 
                 </div>
             </div>
