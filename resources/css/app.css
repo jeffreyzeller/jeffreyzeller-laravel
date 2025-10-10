@@ -53,7 +53,7 @@
         border-color: var(--color-gray-200, currentColor);
     }
     body {
-        @apply bg-blue-50 dark:bg-gray-700 bg-fixed bg-contain bg-center bg-no-repeat bg-blend-multiply;
+        @apply bg-blue-50 dark:bg-gray-700 bg-fixed bg-contain bg-center bg-no-repeat;
         background-image: url('../../public/images/body-bg.jpg');
     }
 
