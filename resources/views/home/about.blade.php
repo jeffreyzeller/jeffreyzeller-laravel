@@ -1,6 +1,8 @@
 <section id="about" class="w-full text-center content-center bg-white/90 dark:bg-slate-950/80 snap-start min-h-[calc(100vh)] bg-wave-flipped bg-cover bg-no-repeat bg-top pt-75">
-    <h2 class="text-4xl text-blue-700 dark:text-gray-100 font-bold mb-5">Crafting systems that work like you do.</h2>
-    <p class="mb-5 font-semibold text-xl text-gray-600">You won’t get a templated site—you’ll get a system built precisely for how you operate.</p>
+    <div class="relative isolate">
+    <h2 class="text-4xl text-blue-700 dark:text-gray-100/100 font-bold mb-5">Crafting systems that work like you do.</h2>
+    <p class="mb-5 font-semibold text-xl text-gray-800 dark:text-gray-200">You won’t get a templated site—you’ll get a system built precisely for how you operate.</p>
+    </div>
     <div class="max-w-5xl mx-auto flex flex-col sm:flex-row p-5">
         <div class="flex-1 p-5 bg-white/100 shadow shadow-lg sm:mr-5 dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-left rounded-xl outline-blue-500/50 outline-4 outline-offset-5">
             <p class="mb-2">I’m a <strong>Laravel App Developer</strong> with over <strong>5 years of experience</strong> designing and building custom web applications that help businesses work smarter.</p>

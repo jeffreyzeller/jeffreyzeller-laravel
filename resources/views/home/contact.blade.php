@@ -1,4 +1,4 @@
-<section id="contact" class="w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[550px] pt-20">
+<section id="contact" class="relative isolate w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[550px] pt-20">
     
     <h2 class="px-5 text-4xl text-white font-bold mb-5">Got and Idea? <br class="sm:hidden" />Lets Talk</h2>
     <p class="px-5 text-lg text-white dark:text-gray-100">Share your idea below or book a time to chat. I'll help you turn it into a web app that works for <i>you</i>.

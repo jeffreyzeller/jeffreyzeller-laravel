@@ -13,7 +13,7 @@
 @source '../../vendor/livewire/flux/stubs/**/*.blade.php';
 
 
-@custom-variant dark (&:where(.dark, .dark *));
+
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -33,9 +33,6 @@
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
     --color-accent-foreground: var(--color-white);
-
-    --wave: images/bg-wave-trans.svg
-    --wave-dark: 
 }
 
 @layer theme {

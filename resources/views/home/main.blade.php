@@ -21,10 +21,13 @@
                     class="px-6 py-3 border border-slate-50 hover:border-blue-400 text-slate-700 hover:text-blue-600 dark:border-slate-600 dark:text-slate-300 dark:hover:text-blue-300 rounded-xl transition">
                         View My Work
                     </a>
-                    
+                    @php
+                    /*
                     <button id="theme-toggle" class="p-2 rounded-lg bg-gray-700 text-gray-100 hover:bg-gray-600 transition">
                         <span id="theme-label">Dark</span>
-                    </button>
+                    </button> 
+                    */
+                    @endphp
 
                 </div>
             </div>

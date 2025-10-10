@@ -9,7 +9,7 @@ class Home extends Controller
 {
     public function index() {
         return view('home', [
-            'portfolio' => Portfolio::latest()->limit(6)->get()
+            'portfolio' => Portfolio::latest()->limit(3)->get()
         ]);
     }
 }
