@@ -3,8 +3,7 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite",
-        "optimize:images": "vite build"
+        "dev": "vite"
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.1.11",
