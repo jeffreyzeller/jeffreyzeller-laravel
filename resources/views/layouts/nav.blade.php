@@ -21,19 +21,19 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="font-medium flex flex-col p-2 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-200 shadow-inner shadow-gray-400 dark:shadow-gray-900/75 md:flex-row md:space-x-1 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray200/10 dark:bg-gray-800 dark:border-gray-700">
             <li class="px-3 py-2">
-            <a href="#home"  class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-home class=" inline w-4 mr-1" /> Home</a>
+            <a href="/#home"  class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-home class=" inline w-4 mr-1" /> Home</a>
             </li>
             <li class="px-3 py-2">
-            <a href="#services" class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-wrench-screwdriver class=" inline w-4 mr-1" /> Services</a>
+            <a href="/#services" class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-wrench-screwdriver class=" inline w-4 mr-1" /> Services</a>
             </li>
             <li class="px-3 py-2">
-            <a href="#portfolio" class="block text-neutral-700 rounded-sm  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-photo class=" inline w-4 mr-1" /> Portfolio</a>
+            <a href="/#portfolio" class="block text-neutral-700 rounded-sm  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-photo class=" inline w-4 mr-1" /> Portfolio</a>
             </li>
             <li class="px-3 py-2">
-            <a href="#about" class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-user class=" inline w-4 mr-1" /> About</a>
+            <a href="/#about" class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-user class=" inline w-4 mr-1" /> About</a>
             </li>
             <li class="px-3 py-2">
-            <a href="#contact" class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-envelope class=" inline w-4 mr-1" /> Contact</a>
+            <a href="/#contact" class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-envelope class=" inline w-4 mr-1" /> Contact</a>
             </li>
         </ul>
         </div>

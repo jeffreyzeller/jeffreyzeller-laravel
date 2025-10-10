@@ -21,7 +21,7 @@
                         @endforeach
                     </p>
                     <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-200">{{ $result->title }}</h3>
-                    <a data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}"  
+                    <a href="/portfolio/{{ $result->id }}"  
                     class="inline-block mt-3 px-4 py-2 bg-blue-600 dark:bg-slate-950 hover:bg-blue-700 rounded-lg text-white text-sm font-medium cursor-pointer">
                     <x-heroicon-s-viewfinder-circle class=" inline w-4 mr-1" />  View Project
                     </a>
