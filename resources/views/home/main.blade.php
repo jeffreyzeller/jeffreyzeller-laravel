@@ -33,7 +33,7 @@
             <div class="flex-1 hidden md:flex justify-center">
                 <img src="{{asset('images/binary.jpg') }}" 
                     alt="Custom dashboard preview" 
-                    class="w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 transition" />
+                    class="w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 transition" width="400px" />
             </div>
         </div>
     </div>
