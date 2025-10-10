@@ -60,3 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// Gaudi Background
+import { initGaudiWires } from './gaudi-wires';
+document.addEventListener('DOMContentLoaded', initGaudiWires);
+
