@@ -11,7 +11,9 @@
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $portfolio->title }}</h3>
             <span class="text-sm font-light">{{ $portfolio->url }}</span><br />
             <div>
+                
                 {!! str($portfolio->description)->sanitizeHtml() !!}
+
             </div>
 
             <!-- Modal footer -->

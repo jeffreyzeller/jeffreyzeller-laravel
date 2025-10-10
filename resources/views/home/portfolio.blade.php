@@ -15,14 +15,14 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div class="absolute bottom-0 p-6 w-full">
-                    <h3 class="text-xl font-semibold text-gray-200">{{ $result->title }}</h3>
-                    <p class="text-slate-300 text-sm text-left mt-1">
+                    <p class="text-slate-300 text-sm mt-1">
                         @foreach($result->tags as $tag)
-                            <span class="inline-block px-2 py-1 mb-1 bg-slate-200 dark:bg-slate-800 text-xs text-slate-700 dark:text-slate-300 rounded">{{ $tag }}</span>
+                            <span class="inline-block px-2 py-1 mb-1 bg-slate-200 dark:bg-slate-700 text-xs text-slate-700 dark:text-slate-300 rounded">{{ $tag }}</span>
                         @endforeach
                     </p>
+                    <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-200">{{ $result->title }}</h3>
                     <a data-modal-target="portfolio-{{ $result->id }}" data-modal-toggle="portfolio-{{ $result->id }}"  
-                    class="inline-block mt-3 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-white text-sm font-medium cursor-pointer">
+                    class="inline-block mt-3 px-4 py-2 bg-blue-600 dark:bg-slate-950 hover:bg-blue-700 rounded-lg text-white text-sm font-medium cursor-pointer">
                     <x-heroicon-s-viewfinder-circle class=" inline w-4 mr-1" />  View Project
                     </a>
                 </div>
