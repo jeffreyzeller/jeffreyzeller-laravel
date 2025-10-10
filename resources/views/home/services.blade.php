@@ -1,4 +1,4 @@
-<section id="services" class="snap-start bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-white  bg-[url({{ asset('images/bg-wave-trans.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark-trans.svg') }})] bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[calc(100vh-72px)]">
+<section id="services" class="snap-start bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-white  bg-wave dark:bg-wave-dark bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[calc(100vh-72px)]">
     <div class="max-w-6xl mx-auto text-center mb-16">
         <h2 class="text-3xl md:text-5xl font-bold mb-4">What I Build</h2>
         <p class="text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">

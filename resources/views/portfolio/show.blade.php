@@ -6,7 +6,6 @@
     <div class="flex relative max-w-5xl mx-auto text-gray-900 dark:text-white">
         <div>
             <img class="w-full rounded-t-lg sm:rounded sm:shadow-lg" src="{{ asset('storage/' . $portfolio->image) }}">
-            
         </div>
         
         <div class="p-5">
@@ -18,7 +17,6 @@
                             <span class="inline-block px-2 py-1 mb-1 bg-slate-200 dark:bg-slate-700 text-xs text-slate-700 dark:text-slate-300 rounded">{{ $tag }}</span>
                 @endforeach
             </div>
-            
             
             <div class="py-5 list-disc">
                 {!! str($portfolio->description)->sanitizeHtml() !!}

@@ -1,4 +1,4 @@
-<section id="about" class="w-full text-center content-center bg-white/90 dark:bg-slate-950/80 snap-start min-h-[calc(100vh)] bg-[url({{ asset('images/bg-wave-trans-flipped.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark-trans-flipped.svg') }})] bg-cover bg-no-repeat bg-top pt-75">
+<section id="about" class="w-full text-center content-center bg-white/90 dark:bg-slate-950/80 snap-start min-h-[calc(100vh)] bg-wave-flipped bg-cover bg-no-repeat bg-top pt-75">
     <h2 class="text-4xl text-blue-700 dark:text-gray-100 font-bold mb-5">Crafting systems that work like you do.</h2>
     <p class="mb-5 font-semibold text-xl text-gray-600">You won’t get a templated site—you’ll get a system built precisely for how you operate.</p>
     <div class="max-w-5xl mx-auto flex flex-col sm:flex-row p-5">

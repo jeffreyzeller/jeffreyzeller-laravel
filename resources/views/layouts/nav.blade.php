@@ -35,27 +35,12 @@
             <li class="px-3 py-2">
             <a href="/#contact" class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-envelope class=" inline w-4 mr-1" /> Contact</a>
             </li>
+            <li>
+
+            </li>
+            </li>
         </ul>
         </div>
     </div>
 </nav>
 <div class="hidden sm:visible h-[72px]"></div>
-<script>
-const toggleBtn = document.getElementById('nav-toggle');
-const menu = document.getElementById('navbar-default');
-
-// handle toggle click
-toggleBtn.addEventListener('click', () => {
-  const isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
-  toggleBtn.setAttribute('aria-expanded', String(!isOpen));
-  menu.classList.toggle('hidden', isOpen);
-});
-
-// close menu when a nav link is clicked
-menu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.add('hidden');
-    toggleBtn.setAttribute('aria-expanded', 'false');
-  });
-});
-</script>

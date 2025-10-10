@@ -1,10 +1,17 @@
 @import 'tailwindcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'flowbite';
 @import '../../vendor/livewire/flux/dist/flux.css';
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
 @source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -26,6 +33,9 @@
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
     --color-accent-foreground: var(--color-white);
+
+    --wave: images/bg-wave-trans.svg
+    --wave-dark: 
 }
 
 @layer theme {
@@ -44,6 +54,24 @@
     ::backdrop,
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
+    }
+    body {
+        @apply bg-blue-50 dark:bg-gray-700 bg-fixed bg-contain bg-center bg-no-repeat bg-blend-multiply;
+        background-image: url('../../public/images/body-bg.jpg');
+    }
+
+    .bg-wave {
+        background-image: url('../../public/images/bg-wave-trans.svg');
+    }
+    .dark .bg-wave {
+        background-image: url('../../public/images/bg-wave-dark-trans.svg');
+    }
+
+    .bg-wave-flipped {
+        background-image: url('../../public/images/bg-wave-trans-flipped.svg');
+    }
+    .dark .bg-wave-flipped {
+        background-image: url('../../public/images/bg-wave-dark-trans-flipped.svg');
     }
 }
 
