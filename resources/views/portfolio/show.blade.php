@@ -11,7 +11,7 @@
         
         <div class="p-5">
             <a href="{{ $portfolio->url }}"><x-heroicon-s-link class="float-right inline w-4 mr-1" /></a>
-            <h1 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $portfolio->title }}</h3>
+            <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">{{ $portfolio->title }}</h3>
             
             <div class="font-bold rounded-b text-left pt-5">
                 @foreach($portfolio->tags as $tag)
