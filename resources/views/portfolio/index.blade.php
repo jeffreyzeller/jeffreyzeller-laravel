@@ -8,7 +8,7 @@
     <div class="bg-white/80 text-slate-900 dark:bg-slate-950/80 dark:text-white bg-wave-flipped bg-cover bg-no-repeat bg-top py-24 px-6 transition-colors duration-300 h-25 lg:h-75">
     &nbsp;
     </div>
-    <div class="w-full text-center content-center bg-white/80 h-50">
+    <div class="w-full text-center content-center bg-white/80 dark:bg-slate-950/80 h-50">
     &nbsp;
     </div>
 @endsection

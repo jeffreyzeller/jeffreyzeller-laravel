@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeffrey Zeller | Freelance Web Developer</title>
-    <link rel="icon" href="{{ asset('images/logo/favicon.ico') }}" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{ asset('images/logo/icon-512.png') }}">
-    <img src="{{ asset('images/logo/logo.svg') }}" alt="Jeffrey Zeller Logo" class="h-8 w-auto">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
     </head>
