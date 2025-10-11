@@ -48,7 +48,8 @@
 
 
     // --- build grid nodes ---
-    const cols = 22, rows = 14;
+    const cols = window.innerWidth < 640 ? 12 : 22; // fewer tiles on mobile
+    const rows = Math.round(cols * 0.6);
     const cellW = canvas.width / cols;
     const cellH = canvas.height / rows;
     const nodes = [];
@@ -90,51 +91,69 @@
     });
 
     // --- animate wires ---
-    let time = 0;
-    function draw() {
-      time += 0.02;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+let time = 0;
+function draw() {
+  time += 0.02;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // parallax influence
-      const mx = (mouseX / window.innerWidth - 0.5) * 20;  // subtle movement
-      const my = (mouseY / window.innerHeight - 0.5) * 20;
-      const scrollShift = Math.min(scrollY * 0.05, 200);   // slow, clamped shift
+  // normalized mouse position (-1 .. 1)
+  const mx = (mouseX / window.innerWidth - 0.5) * 2;
+  const my = (mouseY / window.innerHeight - 0.5) * 2;
+  const scrollAmp = Math.min(scrollY * 0.002, 1); // stronger range
 
-      nodes.forEach(n => {
-        n._x = n.x + Math.sin(time + n.phase) * 8 + mx;
-        n._y = n.y + Math.cos(time * 1.1 + n.phase) * 8 - scrollShift + my;
-      });
+  nodes.forEach((n, i) => {
+    // base sine flow
+    const waveX = Math.sin(time + n.phase + n.y * 0.008) * 8;
+    const waveY = Math.cos(time * 1.1 + n.phase + n.x * 0.008) * 8;
 
-      // fill tiles
-      tiles.forEach(t => {
-        ctx.beginPath();
-        ctx.moveTo(t.a._x, t.a._y);
-        ctx.lineTo(t.b._x, t.b._y);
-        ctx.lineTo(t.c._x, t.c._y);
-        ctx.lineTo(t.d._x, t.d._y);
-        ctx.closePath();
-        ctx.fillStyle = t.color;
-        ctx.globalAlpha = 0.7;
-        ctx.fill();
-      });
+    // local mouse attraction: nearby tiles move more
+    const dx = (n.x / canvas.width - 0.5);
+    const dy = (n.y / canvas.height - 0.5);
+    const dist = Math.sqrt((mx - dx) ** 2 + (my - dy) ** 2);
+    const mouseWarp = Math.max(0, 1 - dist * 3); // influence radius
 
-      // grout outlines
-      ctx.globalAlpha = 0.3;
-      ctx.lineWidth = 3; // adjust grout thickness here
-      ctx.strokeStyle = dark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)';
-      ctx.beginPath();
-      tiles.forEach(t => {
-        ctx.moveTo(t.a._x, t.a._y);
-        ctx.lineTo(t.b._x, t.b._y);
-        ctx.lineTo(t.c._x, t.c._y);
-        ctx.lineTo(t.d._x, t.d._y);
-        ctx.closePath();
-      });
-      ctx.stroke();
+    const mousePullX = (mx - dx) * mouseWarp * 95; // strength
+    const mousePullY = (my - dy) * mouseWarp * 95;
 
-      requestAnimationFrame(draw);
-    }
-    draw();
+    // scroll adds a vertical ripple
+    const scrollWave = Math.sin(n.y * 0.05 + time * 0.3) * scrollAmp * 40;
+
+    n._x = n.x + waveX + mousePullX;
+    n._y = n.y + waveY + scrollWave + mousePullY * 0.7;
+  });
+
+  // fill tiles
+  ctx.globalAlpha = 0.7;
+  tiles.forEach(t => {
+    ctx.beginPath();
+    ctx.moveTo(t.a._x, t.a._y);
+    ctx.lineTo(t.b._x, t.b._y);
+    ctx.lineTo(t.c._x, t.c._y);
+    ctx.lineTo(t.d._x, t.d._y);
+    ctx.closePath();
+    ctx.fillStyle = t.color;
+    ctx.fill();
+  });
+
+  // grout outlines
+  ctx.globalAlpha = 0.35;
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = dark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)';
+  ctx.beginPath();
+  tiles.forEach(t => {
+    ctx.moveTo(t.a._x, t.a._y);
+    ctx.lineTo(t.b._x, t.b._y);
+    ctx.lineTo(t.c._x, t.c._y);
+    ctx.lineTo(t.d._x, t.d._y);
+    ctx.closePath();
+  });
+  ctx.stroke();
+
+  requestAnimationFrame(draw);
+}
+draw();
+
+
 
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
