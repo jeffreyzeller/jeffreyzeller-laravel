@@ -1,7 +1,7 @@
 <!-- Layout Background -->
-<div class="snap-start bg-white/80 text-slate-900 dark:bg-slate-950/80 dark:text-white  bg-wave bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[100px]">
+<div class="relative snap-start bg-white/80 text-slate-900 dark:bg-slate-950/80 dark:text-white  bg-wave bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  z-[50] min-h-[100px]">
 </div>
-<section id="contact" class="relative isolate w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[550px] pt-20 -z-10">
+<section id="contact" class="relative w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[550px] py-20">
     
     <h2 class="px-5 text-4xl text-white font-bold mb-5">Got and Idea? <br class="sm:hidden">Lets Talk</h2>
     <p class="px-5 text-lg text-white dark:text-gray-100">Share your idea below or book a time to chat. I'll help you turn it into a web app that works for <i>you</i>.
