@@ -31,5 +31,12 @@
             @endforeach
             
         </div>
+        
+        @if(!Route::is('portfolio.index'))
+            <a href="/portfolio" 
+            class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-lg shadow-blue-600/20 transition">
+                View All My Work
+            </a>
+        @endif     
     </div>
 </section>

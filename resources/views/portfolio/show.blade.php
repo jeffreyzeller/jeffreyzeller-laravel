@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section id="services" class="snap-start bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-white  bg-[url({{ asset('images/bg-wave-trans.svg') }})] dark:bg-[url({{ asset('images/bg-wave-dark-trans.svg') }})] bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[calc(100vh-72px)]">
+<section id="services" class="snap-start bg-white/80 dark:bg-slate-950/80 text-slate-900 dark:text-white  bg-wave bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[calc(100vh-72px)]">
             
     <div class="flex relative max-w-5xl mx-auto text-gray-900 dark:text-white">
         <div>
@@ -24,5 +24,12 @@
         
         </div>
     </div>
+
 </section>
+<div class="bg-white/80 text-slate-900 dark:bg-slate-950/80 dark:text-white bg-wave-flipped bg-cover bg-no-repeat bg-top py-24 px-6 transition-colors duration-300 h-25 lg:h-75">
+    &nbsp;
+</div>
+<div class="w-full text-center content-center bg-white/80 h-50">
+    <a class="py-2 px-3 bg-blue-500">Help</a>
+</div>
 @endsection

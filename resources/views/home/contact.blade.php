@@ -1,3 +1,6 @@
+<!-- Layout Background -->
+<div class="snap-start bg-white/80 text-slate-900 dark:bg-slate-950/80 dark:text-white  bg-wave bg-cover bg-no-repeat bg-bottom py-24 px-6 transition-colors duration-300  min-h-[100px]">
+</div>
 <section id="contact" class="relative isolate w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[550px] pt-20 -z-10">
     
     <h2 class="px-5 text-4xl text-white font-bold mb-5">Got and Idea? <br class="sm:hidden" />Lets Talk</h2>
