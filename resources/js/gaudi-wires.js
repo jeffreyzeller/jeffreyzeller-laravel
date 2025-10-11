@@ -80,10 +80,7 @@
 
     // --- scroll + mouse input ---
     let scrollY = 0;
-    window.addEventListener('scroll', () => {
-      scrollY = window.scrollY || 0;
-    }, { passive: true });
-
+    
     let mouseX = 0, mouseY = 0;
     window.addEventListener('mousemove', e => {
       mouseX = e.clientX;

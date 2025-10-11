@@ -1,4 +1,4 @@
-<section id="home" class="snap-start bg-white/50 text-slate-900/50 dark:bg-slate-900/90 dark:text-white overflow-hidden transition-colors duration-300 bg-blend-multiply">
+<section id="abomainut" class="w-full text-center content-center bg-white/80 dark:bg-slate-950/80 snap-start">
     <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
         
         <!-- Text -->
