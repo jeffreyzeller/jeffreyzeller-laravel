@@ -1,4 +1,4 @@
-<section id="portfolio" class="w-full relative isolate text-center content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[calc(100vh-300px)] -z-10 pt-28">
+<section id="portfolio" class="w-full relative isolate text-center content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[calc(100vh-300px)] pt-28">
     <h2 class="text-4xl text-white dark:text-gray-100 font-bold mb-5">My Recent Work</h2>         
     <p class="text-white dark:text-gray-100">Here’s what I build — custom web apps, dashboards & client portals. Below are my most recent and strongest projects.</p>
     <div class="lg:max-w-5xl mx-5 mt-10 sm:mx-auto">    
