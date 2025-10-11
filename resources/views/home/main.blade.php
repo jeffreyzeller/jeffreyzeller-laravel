@@ -1,4 +1,4 @@
-<section class="relative w-full text-center content-center bg-white/80 dark:bg-slate-950/80 snap-start -z-10">
+<section class="relative w-full text-center content-center bg-white/80 dark:bg-slate-950/80 snap-start">
     <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
         
         <!-- Text -->
