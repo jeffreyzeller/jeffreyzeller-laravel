@@ -9,6 +9,6 @@
     &nbsp;
     </div>
     <div class="w-full text-center content-center bg-white/80 h-50">
-    <a class="py-2 px-3 bg-blue-500">Help</a>
+    &nbsp;
     </div>
 @endsection
