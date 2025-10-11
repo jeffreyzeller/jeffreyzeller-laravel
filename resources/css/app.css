@@ -53,11 +53,11 @@
         border-color: var(--color-gray-200, currentColor);
     }
     
-    body {
+    /* body {
         @apply bg-blue-50 dark:bg-gray-700 bg-cover bg-center bg-fixed bg-no-repeat bg-blend-multiply;
-        background-image: url('../../public/images/body-bg.jpg');
+        background-image: url('../../public/images/body-bg.jpg'); 
     }
-
+    */
     .bg-wave {
         background-image: url('../../public/images/bg-wave-trans.svg');
     }

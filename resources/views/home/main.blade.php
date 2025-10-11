@@ -1,4 +1,4 @@
-<section id="home" class="snap-start bg-blue-200/95 text-slate-900 dark:bg-slate-900 dark:text-white overflow-hidden transition-colors duration-300">
+<section id="home" class="snap-start bg-white/50 text-slate-900/50 dark:bg-slate-900/90 dark:text-white overflow-hidden transition-colors duration-300 bg-blend-multiply">
     <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
         
         <!-- Text -->

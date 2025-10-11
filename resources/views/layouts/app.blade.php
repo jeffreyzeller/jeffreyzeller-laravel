@@ -16,7 +16,7 @@
         }
     </style>
     </head>
-    <body>
+    <body class="min-h-screen relative overflow-x-hidden text-gray-900 dark:text-gray-100">
         @include('layouts.nav')
 
         @yield('hero')
@@ -29,5 +29,8 @@
         @include('layouts.footer')
         <!-- <script src="https://elfsightcdn.com/platform.js" async></script> -->
         <!-- <div class="elfsight-app-708553fe-5e5d-4f26-92bd-4a1f5833ea13" data-elfsight-app-lazy></div> -->
+        
 
+    </body>
+    
 </html>

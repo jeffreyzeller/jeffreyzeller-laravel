@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="sm:order-last bg-blue-500 border-gray-200 dark:bg-gray-800 sticky w-full top-0 z-55">
+<nav class="sm:order-last bg-blue-500 border-gray-200 dark:bg-gray-800 backdrop-blur-sm fixed left-0 w-full top-0 z-100">
     <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://www.jeffreyzeller.com" class="flex items-center space-x-3 rtl:space-x-reverse">
             <!-- <img src="#" class="h-8" alt="Jeffrey Zeller Logo" /> -->
