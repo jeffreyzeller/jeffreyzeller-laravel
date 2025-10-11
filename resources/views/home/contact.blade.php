@@ -3,7 +3,7 @@
 </div>
 <section id="contact" class="relative isolate w-full text-center place-content-center bg-blue-700 dark:bg-gray-800 snap-start min-h-[550px] pt-20 -z-10">
     
-    <h2 class="px-5 text-4xl text-white font-bold mb-5">Got and Idea? <br class="sm:hidden" />Lets Talk</h2>
+    <h2 class="px-5 text-4xl text-white font-bold mb-5">Got and Idea? <br class="sm:hidden">Lets Talk</h2>
     <p class="px-5 text-lg text-white dark:text-gray-100">Share your idea below or book a time to chat. I'll help you turn it into a web app that works for <i>you</i>.
     
     <div class="max-w-lg mx-auto text-left">
@@ -48,19 +48,19 @@
                         @csrf
                         @method('POST')
                         <div>
-                            <input type="text" name="name" type="text" class="w-full rounded-t-lg mb-3 @error('name') is-invalid @enderror" placeholder="Name" class="">
+                            <input type="text" name="name" class="w-full rounded-t-lg mb-3 @error('name') is-invalid @enderror" placeholder="Name" class="">
                             @error('name')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div>
-                            <input type="text" name="email" type="email" class="w-full mb-3 @error('email') is-invalid @enderror" placeholder="email@addr.ess">
+                            <input name="email" type="email" class="w-full mb-3 @error('email') is-invalid @enderror" placeholder="email@addr.ess">
                             @error('email')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div>
-                            <textarea type="text" name="message" class="w-full mb-2 @error('message') is-invalid @enderror" placeholder="Message" rows="5"></textarea>
+                            <textarea name="message" class="w-full mb-2 @error('message') is-invalid @enderror" placeholder="Message" rows="5"></textarea>
                             @error('message')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
@@ -78,7 +78,7 @@
                         </div>
                         <!-- Calendly link widget begin -->
                         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
                         <a href="" class="block bg-orange-500 dark:bg-orange-600 text-white text-center text-xl font-bold rounded-b-lg p-3 mb-3 w-full" 
                         onclick="Calendly.initPopupWidget({url: 'https://calendly.com/accounts-jeffreyzeller'});return false;">Check My Availability</a>
                         <!-- Calendly link widget end -->

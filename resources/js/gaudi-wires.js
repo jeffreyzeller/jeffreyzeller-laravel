@@ -40,6 +40,8 @@
       z-index: -10;
       pointer-events: none;
       background: ${dark ? '#1F2937' : '#1D4ED8'};
+      pointer-events: none !important;
+      touch-action: none !important;
     `;
   }
 

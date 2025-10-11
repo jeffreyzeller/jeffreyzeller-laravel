@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="sm:order-last bg-blue-500 border-gray-200 dark:bg-gray-800 backdrop-blur-sm fixed left-0 w-full top-0 z-100">
+<nav class="bg-blue-500 border-gray-200 dark:bg-gray-800 sticky left-0 w-full top-0 z-100">
     <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://www.jeffreyzeller.com" class="flex items-center space-x-3 rtl:space-x-reverse">
             <!-- <img src="#" class="h-8" alt="Jeffrey Zeller Logo" /> -->
@@ -7,7 +7,7 @@
         </a>
         <!-- Toggle Button -->
         <button id="nav-toggle" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden 
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden
           hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 
           dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
@@ -34,10 +34,6 @@
             </li>
             <li class="px-3 py-2">
             <a href="/#contact" class="block text-neutral-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><x-heroicon-o-envelope class=" inline w-4 mr-1" /> Contact</a>
-            </li>
-            <li>
-
-            </li>
             </li>
         </ul>
         </div>

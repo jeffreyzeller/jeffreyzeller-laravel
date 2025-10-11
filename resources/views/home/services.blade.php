@@ -18,7 +18,7 @@
 
         <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-blue-500/20 dark:hover:shadow-blue-950/20 border border-slate-200 dark:border-slate-800 transition">
             <div class="text-blue-600 dark:text-blue-400 text-4xl mb-4">👥</div>
-            <h3 class="text-xl font-semibold mb-2">Client &amp User Portals</h3>
+            <h3 class="text-xl font-semibold mb-2">Client &amp; User Portals</h3>
             <p class="text-slate-600 dark:text-slate-400 text-sm">
                 Give your clients or users a secure, smooth interface to interact with your service — with exactly what they need, no fluff.
             </p>

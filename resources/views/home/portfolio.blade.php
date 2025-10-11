@@ -11,8 +11,8 @@
                 hover:outline-blue-200 dark:hover:outline-gray-700 hover:outline-2 hover:outline-offset-4
                 shadow-sm hover:shadow-white/20 dark:hover:shadow-gray-500/20 transition-all duration-300 hover:-translate-y-2">
                 <img src="{{ asset('storage/' . $result->image) }}" alt="Project Screenshot" 
-                    class="w-full h-56 object-cover group-hover:scale-110 group-hover:brightness-90 transition-transform duration-500" />
-                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" width="300px"></div>
+                    class="w-full h-56 object-cover group-hover:scale-110 group-hover:brightness-90 transition-transform duration-500" width="300">
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div class="absolute bottom-0 p-6 w-full">
                     <p class="text-slate-300 text-sm mt-1">

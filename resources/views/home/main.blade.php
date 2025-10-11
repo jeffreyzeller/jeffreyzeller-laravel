@@ -1,4 +1,4 @@
-<section id="abomainut" class="w-full text-center content-center bg-white/80 dark:bg-slate-950/80 snap-start">
+<section class="relative w-full text-center content-center bg-white/80 dark:bg-slate-950/80 snap-start -z-10">
     <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
         
         <!-- Text -->
@@ -33,7 +33,7 @@
             <div class="flex-1 hidden md:flex justify-center">
                 <img src="{{asset('images/binary.jpg') }}" 
                     alt="Custom dashboard preview" 
-                    class="w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 transition" width="400px" />
+                    class="w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 transition" width="400">
             </div>
         </div>
     </div>
