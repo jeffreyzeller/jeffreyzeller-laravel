@@ -47,6 +47,7 @@
                     <form id="contact-form" action="{{ route('contact.submit') }}" method="POST">
                         @csrf
                         @method('POST')
+                        <x-turnstile />
                         <div>
                             <input type="text" name="name" class="w-full rounded-t-lg mb-3 @error('name') is-invalid @enderror" placeholder="Name" class="">
                             @error('name')

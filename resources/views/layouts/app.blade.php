@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark scroll-smooth overflow-y-scroll md:snap-y md:snap-mandatory">
+<html lang="en" class="scheme-light dark:scheme-dark scroll-smooth overflow-y-scroll md:snap-y md:snap-mandatory">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
+    @turnstileScripts()
     </head>
     <body class="min-h-screen relative overflow-x-hidden text-gray-900 dark:text-gray-100">
         @include('layouts.nav')

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreContactRequest;
 use Illuminate\Http\Request;
 use App\Models\Contact as ContactModel;
+use Illuminate\Validation\Rule;
 
 class Contact extends Controller
 {
@@ -30,6 +31,9 @@ class Contact extends Controller
     public function store(StoreContactRequest $request)
     {
         //
+        $request->validate([
+            'cf-turnstile-response' => ['required', Rule::turnstile()],
+        ]);
         $validated = $request->validated();
         if ($validated) {
             $contact = new ContactModel();
