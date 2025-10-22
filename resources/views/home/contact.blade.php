@@ -47,7 +47,6 @@
                     <form id="contact-form" action="{{ route('contact.submit') }}" method="POST">
                         @csrf
                         @method('POST')
-                        <x-turnstile />
                         <div>
                             <input type="text" name="name" class="w-full rounded-t-lg mb-3 @error('name') is-invalid @enderror" placeholder="Name" class="">
                             @error('name')
@@ -66,6 +65,8 @@
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
+
+                        <x-turnstile />
                         <button class="bg-orange-500 dark:bg-orange-600 text-white text-xl font-bold rounded-b-lg p-3 w-full mb-3" type="submit">
                             Send Your Idea
                         </button>
