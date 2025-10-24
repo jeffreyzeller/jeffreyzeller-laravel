@@ -65,8 +65,9 @@
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
-
+                        <div class="content-center text-center pb-2">
                         <x-turnstile />
+                        </div>
                         <button class="bg-orange-500 dark:bg-orange-600 text-white text-xl font-bold rounded-b-lg p-3 w-full mb-3" type="submit">
                             Send Your Idea
                         </button>
